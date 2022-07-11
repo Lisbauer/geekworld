@@ -703,7 +703,7 @@ justify-content: space-evenly;
     background-color: rgb(185, 110, 169);
 }
 .boxCategorias2Grid ul li:hover{
-    background-color: rgb(243, 80, 213);
+    background-color: rgb(244, 91, 216);
     transform: scale(1.6);
 }
 .boxCasillas input:hover{
