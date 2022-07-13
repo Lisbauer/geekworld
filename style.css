@@ -14,6 +14,7 @@ body{
 li{
     list-style: none;
 }
+
 header{
    position:sticky;
     top: 0;
@@ -21,7 +22,8 @@ header{
     background-size: cover;
     background-position: center;
 }
-nav{
+
+/*nav{
     height: 20vh;
     border: solid 1px rgb(0, 0, 0);
     display: flex;
@@ -31,7 +33,7 @@ nav{
     position: relative;
     flex-wrap: wrap; 
 }
-.boxLinks{
+ .boxLinks{
     width: 550px;
     background-color: rgb(249, 203, 236); 
     margin-bottom: 15px;
@@ -88,7 +90,72 @@ nav{
 width: 300px;
 height: 32px;
 border: 4px solid pink ;
+} */
+.container-fluid{
+    background-image: url(./imagenes/nezukofondo2.jpg);
+    border: solid 2px pink;
+    height: 18vh;
 }
+.collapse{
+   
+
+}
+.navbar-nav{
+    display: flex;
+    justify-content: flex-start;
+   align-items: flex-start;
+   
+}
+.navbar-nav{
+    display: flex;
+    justify-content: flex-start;
+}
+.navbar-nav li{
+    margin: 18px;
+    padding: 1px 10px ;
+    background-color: rgb(249, 203, 236); 
+    font-size: 17px;
+    margin-top: 137px;
+}
+.navbar-brand img{
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -27%;
+    left: 40%;
+}
+.d-flex{
+    margin-top: 120px;
+}
+.d-flex button{
+    background-color: white;
+}
+.d-flex button:hover{
+    background-color: rgb(249, 203, 236);
+}
+.ingresaRegistrate{
+    display: flex;
+    justify-content: space-around;
+}
+.ingresaBoton{
+    background-color: rgb(249, 203, 236);
+    padding: 9px;
+    border-radius: 4%;
+    margin: 7px;
+}
+.registrateBoton{
+    background-color: rgb(249, 203, 236);
+    padding: 9px;
+    border-radius: 4%;
+    margin: 7px;
+}
+.carrito img{
+    display: flex;
+    width: 60px; 
+}
+
+
 .boxQuienes{
     background-color: rgb(247, 190, 229);
     width: 50%;
