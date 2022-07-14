@@ -16,8 +16,6 @@ li{
 }
 
 header{
-   position:sticky;
-    top: 0;
     background-image: url(./imagenes/nezukofondo2.jpg);
     background-size: cover;
     background-position: center;
@@ -91,31 +89,21 @@ width: 300px;
 height: 32px;
 border: 4px solid pink ;
 } */
-.container-fluid{
-    background-image: url(./imagenes/nezukofondo2.jpg);
+.navbar{
+   background-image: url(./imagenes/nezukofondo2.jpg); 
     border: solid 2px pink;
-    height: 18vh;
-}
-.collapse{
-   
+    height: 195px;
+    display: flex;
+    background-position: top;
 
 }
-.navbar-nav{
-    display: flex;
-    justify-content: flex-start;
-   align-items: flex-start;
-   
-}
-.navbar-nav{
-    display: flex;
-    justify-content: flex-start;
-}
+
 .navbar-nav li{
     margin: 18px;
     padding: 1px 10px ;
     background-color: rgb(249, 203, 236); 
     font-size: 17px;
-    margin-top: 137px;
+    
 }
 .navbar-brand img{
     width: 18%;
@@ -125,8 +113,13 @@ border: 4px solid pink ;
     top: -27%;
     left: 40%;
 }
+.ingresa-registrate-carrito{
+    display: flex;
+}
 .d-flex{
-    margin-top: 120px;
+    height: 40px;
+    width: 320px;
+    margin-top: 13px;
 }
 .d-flex button{
     background-color: white;
@@ -140,13 +133,13 @@ border: 4px solid pink ;
 }
 .ingresaBoton{
     background-color: rgb(249, 203, 236);
-    padding: 9px;
+    padding: 12px;
     border-radius: 4%;
     margin: 7px;
 }
 .registrateBoton{
     background-color: rgb(249, 203, 236);
-    padding: 9px;
+    padding: 12px;
     border-radius: 4%;
     margin: 7px;
 }
@@ -154,8 +147,49 @@ border: 4px solid pink ;
     display: flex;
     width: 60px; 
 }
+.container-fluid{
+  
+}
+/* MEDIA QUERIES NAV BOOTSTRAP */
 
-
+@media (max-width: 1240px){
+    .ingresa-registrate-carrito{
+        display: flex;
+        flex-direction: column; 
+    }
+    .navbar-brand img{
+        width: 19%;
+        display: flex;
+        margin-top: 40px;
+        margin-left: 100px;
+    }
+}
+@media (max-width: 991px) {
+    .navbar-toggler{
+        background-color: rgb(237, 155, 214);
+    }
+    .navbar{
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .navbar-nav{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin: 20px;
+    }
+    .collapse navbar-collapse{
+        width: 10%;
+    }
+    .ingresa-registrate-carrito{
+        position: absolute;
+    }
+    .container-fluid{
+        position: absolute;
+        top: 30px;
+    }
+}
 .boxQuienes{
     background-color: rgb(247, 190, 229);
     width: 50%;
@@ -539,7 +573,7 @@ justify-content: space-evenly;
     transform: scale(1.7);
     transition: transform 1s;
 }
-/*PREVENTA GRID*/
+PREVENTA GRID
 .proximosIngresosSectionGrid{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(23rem, 4fr));
@@ -676,9 +710,6 @@ justify-content: space-evenly;
 
 /* MEDIA QUERY */
 @media (max-width: 1226px) {
-    .boxLogo{
-        display: none;
-    }
     .gridcontainer{
         display: grid;
         grid-template-columns: 280px 280px 280px;
@@ -702,6 +733,10 @@ justify-content: space-evenly;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
 }
+    .ingresa-registrate-carrito{
+        margin-right: 70px;
+    }
+  
 }
 @media (max-width: 900px) {
     .mapaGrid{
@@ -745,6 +780,9 @@ justify-content: space-evenly;
     .h2IniciarSesion{
         font-size: 20px;
     }
+    .navbar-brand img{
+        display: none;
+    }
 }
 
 /*HOVER*/
@@ -777,3 +815,35 @@ justify-content: space-evenly;
     transition: 0.3s;
     border: solid rgb(255, 255, 255);
 }
+
+/* PREVENTA BOOTSTRAP */
+.card{
+    width: 250px;
+    height: 300px;
+    color: rgb(229, 255, 0);
+    background-color: rgb(245, 127, 227);
+}
+.col{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    align-items: center;
+}
+.list-group-item{
+    background-color: rgb(246, 164, 229);
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+.list-group-section{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.list-group-item:hover{
+        background-color: rgb(244, 91, 216);
+        transform: scale(1);
+        transition: 1s;
+}
+

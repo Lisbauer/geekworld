@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=!, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,46 +24,61 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div class="boxLinks">
-          <ul class="linksPaginas">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./preventa.html">Preventa</a></li>
-            <li><a href="./nosotros.html">Nosotros</a></li>
-            <li><a href="./catalogo.html">Catalogo</a></li>
-            <li><a href="./outlet.html">Outlet</a></li>
-          </ul>
-        </div>
-
-        <div class="boxLogo">
-          <img class="logo" src="../imagenes/logo.png" />
-        </div>
-
-        <div class="boxRight">
-          <div class="boxBuscador">
-            <form class="buscador">
-              <input class="buscadorDos" type="search" placeholder="Buscar" />
-            </form>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img src="../imagenes/logo.png" alt="geekworld"></a>
+            
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./preventa.html">Preventa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./catalogo.html">Catálogo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              </li>
           </div>
-
-          <ul class="ingresaRegistrate">
-            <li class="ingresaBoton">
-              <a href="./ingresa.html">Ingresa</a>
-            </li>
-            <li class="registrateBoton">
-              <a href="./registrate.html">Registrate</a>
-            </li>
-          </ul>
-          <a class="carrito" href="carrito.html"
-            ><img src="../imagenes/carrito.png"
-          /></a>
         </div>
+
+           
+             <div class="ingresa-registrate-carrito">
+               </ul>
+               <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+            <ul class="ingresaRegistrate">
+          <li class="ingresaBoton">
+            <a href="./ingresa.html">Ingresa</a>
+          </li>
+          <li class="registrateBoton">
+            <a href="./registrate.html">Registrate</a>
+          </li>
+         <a class="carrito" href="carrito.html"><img src="./imagenes/carrito.png"/></a>
+          </ul> 
+        
+      
+        
+        
+           
+          </div>
       </nav>
     </header>
 
     <main>
       <h2 class="proximosIngresosGrid">PROXIMOS INGRESOS</h2>
-      <section class="proximosIngresosSectionGrid">
+      <!-- <section class="proximosIngresosSectionGrid">
         <div>
           <article>
             <img src="../imagenes/dvapreventa.png" />
@@ -118,7 +134,73 @@
             <h4 class="Reservar">Reservar</h4>
           </article>
         </div>
-      </section>
+      </section> -->
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card">
+            <a href="reservar.html"><img src="../imagenes/dvapreventa.png" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">Dva MEK</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <a href="reservar.html"><img src="../imagenes/gengarpreventa.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">Gengar</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <a href="reservar.html"><img src="../imagenes/tomiokapreventa.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">Tomioka KNY</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <a href="reservar.html"><img src="../imagenes/onepiecepreventa.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">Zoro One Piece</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <a href="reservar.html"><img src="../imagenes/jinxpreventa.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">Jinx LOL</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <a href="reservar.html"><img src="../imagenes/mewtwopreventa.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">Mewtwo Pokemon</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <a href="reservar.html"><img src="../imagenes/pokemonpreventa.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">Pokemon</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <a href="reservar.html"><img src="../imagenes/nezukopreventa.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">Nezuko KNY</h5>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- FOOTER -->
@@ -174,5 +256,7 @@
         </a>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
   </body>
 </html>
