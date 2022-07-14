@@ -49,8 +49,6 @@
               </li>
           </div>
         </div>
-
-           
              <div class="ingresa-registrate-carrito">
                </ul>
                <form class="d-flex">
@@ -66,57 +64,27 @@
           </li>
          <a class="carrito" href="carrito.html"><img src="./imagenes/carrito.png"/></a>
           </ul> 
-        
-      
-        
-        
-           
           </div>
       </nav>
     </header>
+
     <main>
-      <section class="sectionCasillas">
-        <h2 class="h2IniciarSesion">INICIAR SESION CON TU CUENTA</h2>
-        <section>
-          <div>
-            <div class="boxCasillas">
-              <form class="casillas">
-                <label for="email">Email</label>
-                <input
-                  class="inputs"
-                  type="email"
-                  placeholder="Coloque Su Email Aqui"
-                />
-                <label for="contraseña">Contraseña</label>
-                <input
-                  class="inputs"
-                  type="password"
-                  placeholder="Coloque Su Contraseña Aqui"
-                />
-                <input
-                  class="botoniniciar"
-                  type="button"
-                  value="INICIAR SESION"
-                />
-              </form>
-            </div>
-            <h4>
-              <a class="olvidastepw" href="recuperar-contrasenia.html"
-                >Olvidaste tu contraseña?</a
-              >
-            </h4>
-          </div>
-          <div class="inputregistrate">
-            <form>
-              <input
-                class="botonregistrate"
-                type="button"
-                value="REGISTRATE AQUI"
-              />
-            </form>
-          </div>
-        </section>
-      </section>
+      <form class="mb-form">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+          <div id="emailHelp" class="form-text">No compartiremos tu contraseña con nadie.</div>
+        </div>
+        <div class="mb-2 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Ingresa</button>
+      </form>
       <div class="stitch">
         <img src="../imagenes/stitch.png" alt="stitch" />
       </div>
