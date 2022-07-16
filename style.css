@@ -15,30 +15,61 @@ li{
     list-style: none;
 }
 header{
+    position: sticky;
+    top: 0%;
     background-image: url(./imagenes/nezukofondo2.jpg);
     background-size: cover;
     background-position: center;
+    z-index: 999;
+}
+.list-group-section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
 }
 .navbar{
-   background-image: url(./imagenes/nezukofondo2.jpg); 
+    background-image: url(./imagenes/nezukofondo2.jpg); 
     border: solid 2px pink;
     height: 195px;
     display: flex;
     background-position: top;
 }
 .navbar-nav li{
-    margin: 18px;
+    margin-top: 130px;
+    width: 150px;
     padding: 1px 10px ;
     background-color: rgb(249, 203, 236); 
     font-size: 17px;
+    text-align: center;
+}
+
+.navbar-nav li:hover{
+    transition: 0.3s;
+    box-shadow: inset 6px 6px 40px 6px rgb(237, 152, 199);
+    
+    color: rgb(255, 255, 255);
+}
+.ingresaBoton:hover{
+    transition: 0.3s;
+    box-shadow: inset 6px 6px 40px 6px rgb(237, 152, 199);
+    color: rgb(255, 255, 255);
+}
+.registrateBoton:hover{
+    transition: 0.3s;
+    box-shadow: inset 6px 6px 40px 6px rgb(237, 152, 199);
+    color: rgb(255, 255, 255);
 }
 .navbar-brand img{
     width: 18%;
     display: flex;
     justify-content: center;
     position: absolute;
-    top: -27%;
+    top: -14%;
     left: 40%;
+    width: 14%;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: rgb(255, 0, 204);
 }
 .ingresa-registrate-carrito{
     display: flex;
@@ -57,6 +88,7 @@ header{
 .ingresaRegistrate{
     display: flex;
     justify-content: space-around;
+    padding-left: 0%;
 }
 .ingresaBoton{
     background-color: rgb(249, 203, 236);
@@ -75,6 +107,7 @@ header{
     width: 60px; 
 }
 .container-fluid{
+    z-index: 998;
 }
 /* MEDIA QUERIES NAV BOOTSTRAP */
 
@@ -127,6 +160,13 @@ header{
     padding-bottom: 8%;
     margin-top: 3%;
     border: 3px solid yellow;
+    cursor:pointer
+}
+
+.boxQuienes:hover{
+    transition: 1.1s all;
+    transform: translateX((0px));
+    box-shadow: 100px 100px 200px hotpink, 100px -100px 200px yellow, -100px -100px 200px lightblue, -100px 100px 200px purple;
 }
 .quienesSomos{
     font-family: 'Chau Philomene One', sans-serif;
@@ -137,6 +177,7 @@ header{
     color: rgb(255, 63, 214);
     padding-bottom: 18px;
 }
+
 /*PARRAFO*/
 .parrafoDescripcion{
     color:rgb(0, 0, 0);
@@ -159,10 +200,16 @@ header{
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  
 }
 .figurasUltimosingresos article img{
     width: 250px;
     height: 250px;
+}
+.figurasUltimosingresos article img:hover{
+    transition: 0.2s all;
+    transform: translateY(0px);
+    box-shadow: 1px 1px 70px 2px rgb(139, 75, 136);
 }
 .boxUltimosIngresosYOfertas h4{
     padding: 15px;
@@ -173,7 +220,9 @@ header{
     justify-content:center;
     background-color: rgb(236, 136, 196);
     color: black;
-    align-items:center; 
+    align-items:center;
+    height: 280px;
+    margin-top: 50px;
 }
 .ultimosIngresos article:hover{
     background-color: rgb(252, 250, 131);
@@ -182,6 +231,12 @@ header{
 .agregarCarrito{
     padding: 12px;
 }
+.box-carrito{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
 .ofertasSemana h2{
     font-family: 'Chau Philomene One', sans-serif;
     font-size: 35px;
@@ -201,6 +256,11 @@ header{
       width: 250px;
       height: 250px;
   }
+  .figurasOfertas article img:hover{
+    transition: 0.2s all;
+    transform: translateY(0px);
+    box-shadow: 1px 1px 70px 2px rgb(139, 75, 136);
+  }
   .figurasOfertas article{
       display: flex;
       flex-direction: column;
@@ -209,6 +269,8 @@ header{
       color: black;
       align-items:center;
       margin-bottom: 70px;
+      height: 280px;
+      margin-top: 60px;
 }
 .figurasOfertas article:hover{
     background-color: rgb(252, 250, 131);
@@ -472,7 +534,8 @@ justify-content: space-evenly;
     grid-template-rows: 22rem;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
 }
 .gridcontainer article{
     text-align: center;
@@ -480,11 +543,21 @@ justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: rgb(255, 224, 247);
+   
 }
 .gridcontainer article img{
     width: 250px;
     height: 250px;
-
+    cursor:pointer;
+}
+.gridcontainer article img:hover{
+    transition: 0.2s all;
+    transform: translateY(0px);
+    
+}
+.fotos-grid{
+    margin-top: 7px;
 }
 .losMasVendidos h2{
     font-family: 'Chau Philomene One', sans-serif;
@@ -495,11 +568,21 @@ justify-content: space-evenly;
     margin-top: 100px;
     background-color: rgba(247, 190, 229, 0.563);
 }
-.gridcontainer img:hover{
-    transform: scale(1.7);
-    transition: transform 1s;
+.agregarCarrito{
+    background-color: rgb(253, 245, 95);
+    width: 250px;
+    height: 40px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
 }
-PREVENTA GRID
+.agregarCarrito:hover{
+    transition: 0.3s;
+    background-color: rgb(137, 117, 4);
+    color: rgb(255, 255, 255);
+    border: none;
+}
+/* PREVENTA GRID */
 .proximosIngresosSectionGrid{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(23rem, 4fr));
@@ -647,29 +730,14 @@ PREVENTA GRID
         grid-template-columns: 280px 280px;
     }
 }
-@media (max-width: 580px) {
-    .gridcontainer{
-        display: grid;
-        grid-template-columns: 280px;
-    }
-    .boxCategorias2Grid{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 450px 230px 300px;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-}
-    .ingresa-registrate-carrito{
-        margin-right: 70px;
-    }
-  
-}
+
 @media (max-width: 900px) {
     .mapaGrid{
     width: 230px;
     height: 230px;
     }
 }
+
 @media (max-width: 770px) {
     .boxFooter{
         display: flex;
@@ -688,6 +756,16 @@ PREVENTA GRID
     .stitch img{
        width: 140px;
        height: 150px;
+    }
+    .boxQuienes{
+        height: 200px;
+        width: 500px;
+    }
+    .boxQuienes p{
+        font-size: 15px;
+    }
+    .boxQuienes h2{
+        font-size: 25px;
     }
 }
 @media (max-width: 1100px) {
@@ -710,6 +788,103 @@ PREVENTA GRID
         display: none;
     }
 }
+@media (max-width: 580px) {
+    .gridcontainer{
+        display: grid;
+        grid-template-columns: 280px;
+    }
+    .boxCategorias2Grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 450px 230px 300px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    }
+    .ingresa-registrate-carrito{
+        margin-right: 70px;
+    }
+    .boxQuienes{
+        height: 230px;
+        width: 350px;
+    }
+    .boxQuienes h2{
+        font-size: 23px;
+    }
+    .boxQuienes p{
+        font-size: 14px;
+    }
+    .form-control me-2{
+        width: 60px;
+        height: 20px;
+    }
+    .ingresaRegistrate{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .ingresaBoton {
+        background-color: rgba(250, 128, 114, 0);
+    }
+    .ingresaBoton a{
+        background-color: rgb(249, 203, 236);
+        padding: 8px;
+        margin-left: 0px;
+    }
+    .registrateBoton{
+        background-color: rgba(250, 128, 114, 0);
+    }
+    .registrateBoton a{
+        background-color: rgb(249, 203, 236);
+        padding: 8px;
+        margin-left: 0px;
+    }
+    .carrito img{
+        width: 40px;
+        height: 45px;
+    }
+    .d-flex input{
+        width: 100px;
+        height: 35px;
+        font-size: 12px;
+    }
+    .d-flex button{
+        width: 60px;
+        font-size: 12px;
+        height: 35px;
+    }
+    .d-flex{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 30px;
+    }
+    .navbar{
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+@media (max-width: 360px) {
+    .boxQuienes{
+        width: 270px;
+        height: 280px;
+    }
+    .whatsapp{
+        display: none;
+    }
+    .ingresaRegistrate{
+        width: 50px;
+    }
+    .ingresa-registrate-carrito{
+        width: 80px;
+    }
+    .d-flex{
+        width: 80px;
+    }
+
+}
+
+
+
 
 /*HOVER*/
 
