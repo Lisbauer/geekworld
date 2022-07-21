@@ -1,0 +1,11 @@
+/* tipografias
+font-family: 'Montserrat', sans-serif;
+font-family: 'Chau Philomene One', sans-serif;*/
+/* Selector de etiqueta*/ 
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: map-get($colores , "background-body" )
+}
+li{
+    list-style: none;
+}

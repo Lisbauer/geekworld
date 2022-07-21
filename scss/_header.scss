@@ -1,0 +1,97 @@
+header{
+    position: sticky;
+    top: 0%;
+    background-size: cover;
+    background-position: center;
+    z-index: 999;
+}
+.navbar{ 
+    background-image: map-get($imagenes, "imagen-nezuko" );
+    border: solid 2px pink;
+    height: 195px;
+    display: flex;
+    background-position: top;
+
+    &-nav li{
+        margin-top: 130px;
+        width: 150px;
+        padding: 1px 10px ;
+        background-color: map-get($colores, "navbar-li"); 
+        font-size: map-get($font-size, "navbar-li"); 
+        text-align: center;
+        &:hover{
+            transition: 0.3s;
+            box-shadow: inset 6px 6px 40px 6px map-get($colores , "navbar-li-hover" );
+            color: rgb(255, 255, 255);
+        }
+    }
+}
+
+.ingresaBoton:hover{
+    transition: 0.3s;
+    box-shadow: inset 6px 6px 40px 6px rgb(237, 152, 199);
+    color: rgb(255, 255, 255);
+}
+.registrateBoton:hover{
+    transition: 0.3s;
+    box-shadow: inset 6px 6px 40px 6px rgb(237, 152, 199);
+    color: rgb(255, 255, 255);
+}
+.navbar-brand img{
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -14%;
+    left: 40%;
+    width: 14%;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: map-get($colores , "nav-li" )
+}
+.ingresa-registrate-carrito{
+    display: flex;
+}
+.d-flex{
+    height: 40px;
+    width: 320px;
+    margin-top: 13px;
+}
+.d-flex:hover{
+    transition: 1s;
+    border: solid 3px rgb(222, 153, 187);
+}
+.d-flex-barra{
+    transition: 2s;
+    width: 450px;
+}
+.d-flex button{
+    background-color: white;
+}
+.d-flex button:hover{
+    background-color: rgb(249, 203, 236);
+}
+.ingresaRegistrate{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0%;
+}
+.ingresaBoton{
+    background-color: rgb(249, 203, 236);
+    padding: 12px;
+    border-radius: 4%;
+    margin: 7px;
+}
+.registrateBoton{
+    background-color: rgb(249, 203, 236);
+    padding: 12px;
+    border-radius: 4%;
+    margin: 7px;
+}
+.carrito img{
+    display: flex;
+    width: 60px; 
+}
+.container-fluid{
+    z-index: 998;
+}

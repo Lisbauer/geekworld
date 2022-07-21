@@ -1,0 +1,211 @@
+/* MEDIA QUERY */
+@media (max-width: 1240px){
+    .ingresa-registrate-carrito{
+        display: flex;
+        flex-direction: column; 
+    }
+    .navbar-brand img{
+        width: 19%;
+        display: flex;
+        margin-top: 40px;
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-toggler{
+        background-color: rgb(237, 155, 214);
+    }
+    .navbar{
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .navbar-nav{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin: 20px;
+    }
+    .collapse navbar-collapse{
+        width: 10%;
+    }
+    .ingresa-registrate-carrito{
+        position: absolute;
+    }
+    .container-fluid{
+        position: absolute;
+        top: 30px;
+    }
+}
+@media (max-width: 1226px) {
+    .gridcontainer{
+        display: grid;
+        grid-template-columns: 280px 280px 280px;
+    }
+    .agregarCarrito2{
+        width: 170px;
+    }
+}
+@media (max-width: 880px) {
+    .gridcontainer{
+        display: grid;
+        grid-template-columns: 280px 280px;
+    }
+}
+@media (max-width: 900px) {
+    .mapaGrid{
+    width: 230px;
+    height: 230px;
+    }
+}
+@media (max-width: 770px) {
+    .boxFooter{
+        display: flex;
+        flex-direction: column;
+    }
+    .boxFooterGrid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+    .inputs{
+        width: 260px;
+    }
+    .stitch img{
+       width: 140px;
+       height: 150px;
+    }
+    .boxQuienes{
+        height: 200px;
+        width: 500px;
+    }
+    .boxQuienes p{
+        font-size: 15px;
+    }
+    .boxQuienes h2{
+        font-size: 25px;
+    }
+    .proximosIngresosGrid{
+        font-size: 28px;
+    }
+}
+@media (max-width: 1100px) {
+    .boxCasillas{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .inputregistrate{
+    display: flex;
+    justify-content: flex-start;
+    }
+    .olvidastepw{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .h2IniciarSesion{
+        font-size: 20px;
+    }
+    .navbar-brand img{
+        display: none;
+    }
+    .card article{
+       border: solid 5px rgb(255, 224, 247);
+    }
+
+}
+@media (max-width: 580px) {
+    .gridcontainer{
+        display: grid;
+        grid-template-columns: 280px;
+    }
+    .boxCategorias2Grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 450px 230px 300px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    }
+    .ingresa-registrate-carrito{
+        margin-right: 70px;
+    }
+    .boxQuienes{
+        height: 230px;
+        width: 350px;
+    }
+    .boxQuienes h2{
+        font-size: 23px;
+    }
+    .boxQuienes p{
+        font-size: 14px;
+    }
+    .form-control me-2{
+        width: 60px;
+        height: 20px;
+    }
+    .ingresaRegistrate{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .ingresaBoton {
+        background-color: rgba(250, 128, 114, 0);
+    }
+    .ingresaBoton a{
+        background-color: rgb(249, 203, 236);
+        padding: 8px;
+        margin-left: 0px;
+    }
+    .registrateBoton{
+        background-color: rgba(250, 128, 114, 0);
+    }
+    .registrateBoton a{
+        background-color: rgb(249, 203, 236);
+        padding: 8px;
+        margin-left: 0px;
+    }
+    .carrito img{
+        width: 40px;
+        height: 45px;
+    }
+    .d-flex input{
+        width: 100px;
+        height: 35px;
+        font-size: 12px;
+    }
+    .d-flex button{
+        width: 60px;
+        font-size: 12px;
+        height: 35px;
+    }
+    .d-flex{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 30px;
+    }
+    .navbar{
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+@media (max-width: 360px) {
+    .boxQuienes{
+        width: 270px;
+        height: 280px;
+    }
+    .whatsapp{
+        display: none;
+    }
+    .ingresaRegistrate{
+        width: 50px;
+    }
+    .ingresa-registrate-carrito{
+        width: 80px;
+    }
+    .d-flex{
+        width: 80px;
+    }
+}
