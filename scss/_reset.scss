@@ -1,0 +1,4 @@
+*{
+    margin: map-get($reset, "margin" );
+    padding: map-get($reset , "padding" );
+}

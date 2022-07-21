@@ -1,0 +1,35 @@
+footer{
+    background-color: map-get($colores, "background-footer" );
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 65px;
+    padding-bottom: 40px;  
+
+    .boxFooter{
+        display: flex; 
+        flex-wrap: wrap;   
+        }
+
+    h4{
+        color: map-get($colores , "footer-h4" );
+        font-size: map-get($font-size , "footer-h4" );
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+    }
+        a{
+            color: map-get($colores , "footer-letra" );
+            font-size: 18px;
+        }
+}
+
+.whatsapp{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+}

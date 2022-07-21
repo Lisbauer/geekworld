@@ -1,0 +1,502 @@
+/* tipografias
+font-family: 'Montserrat', sans-serif;
+font-family: 'Chau Philomene One', sans-serif;*/
+/* Selector de etiqueta*/
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f6a4e5; }
+
+li {
+  list-style: none; }
+
+header {
+  position: sticky;
+  top: 0%;
+  background-size: cover;
+  background-position: center;
+  z-index: 999; }
+
+.navbar {
+  background-image: url(../imagenes/nezukofondo2.jpg);
+  border: solid 2px pink;
+  height: 195px;
+  display: flex;
+  background-position: top; }
+  .navbar-nav li {
+    margin-top: 130px;
+    width: 150px;
+    padding: 1px 10px;
+    background-color: #f9cbec;
+    font-size: 17px;
+    text-align: center; }
+    .navbar-nav li:hover {
+      transition: 0.3s;
+      box-shadow: inset 6px 6px 40px 6px #ed98c7;
+      color: white; }
+
+.ingresaBoton:hover {
+  transition: 0.3s;
+  box-shadow: inset 6px 6px 40px 6px #ed98c7;
+  color: white; }
+
+.registrateBoton:hover {
+  transition: 0.3s;
+  box-shadow: inset 6px 6px 40px 6px #ed98c7;
+  color: white; }
+
+.navbar-brand img {
+  width: 18%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: -14%;
+  left: 40%;
+  width: 14%; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #ff00cc; }
+
+.ingresa-registrate-carrito {
+  display: flex; }
+
+.d-flex {
+  height: 40px;
+  width: 320px;
+  margin-top: 13px; }
+
+.d-flex:hover {
+  transition: 1s;
+  border: solid 3px #de99bb; }
+
+.d-flex-barra {
+  transition: 2s;
+  width: 450px; }
+
+.d-flex button {
+  background-color: white; }
+
+.d-flex button:hover {
+  background-color: #f9cbec; }
+
+.ingresaRegistrate {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0%; }
+
+.ingresaBoton {
+  background-color: #f9cbec;
+  padding: 12px;
+  border-radius: 4%;
+  margin: 7px; }
+
+.registrateBoton {
+  background-color: #f9cbec;
+  padding: 12px;
+  border-radius: 4%;
+  margin: 7px; }
+
+.carrito img {
+  display: flex;
+  width: 60px; }
+
+.container-fluid {
+  z-index: 998; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+.boxQuienes {
+  background-color: #f7bee5;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 2%;
+  padding-bottom: 8%;
+  margin-top: 3%;
+  border: 3px solid yellow;
+  cursor: pointer; }
+  .boxQuienes:hover {
+    transition: 1.1s all;
+    transform: translateX(0px);
+    box-shadow: 100px 100px 200px hotpink, 100px -100px 200px yellow, -100px -100px 200px lightblue, -100px 100px 200px purple; }
+  .boxQuienes .quienesSomos {
+    font-family: 'Chau Philomene One', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+    letter-spacing: 7px;
+    color: #ff3fd6;
+    padding-bottom: 18px; }
+  .boxQuienes .parrafoDescripcion {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    margin: 2px auto; }
+
+.ultimosIngresos h2 {
+  font-family: 'Chau Philomene One', sans-serif;
+  font-size: 35px;
+  text-align: center;
+  letter-spacing: 5px;
+  color: #ff3fd6;
+  margin-top: 100px;
+  background-color: rgba(247, 190, 229, 0.563); }
+
+.figurasUltimosingresos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+
+.figurasUltimosingresos article img {
+  width: 250px;
+  height: 250px; }
+
+.boxUltimosIngresosYOfertas h4 {
+  padding: 15px; }
+
+.figurasUltimosingresos article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  align-items: center;
+  height: 338px;
+  margin-top: 50px;
+  text-align: center;
+  padding: 6px; }
+
+.figurasUltimosingresos article:hover {
+  transition: 0.3s;
+  box-shadow: 3px 1px 8px 1px rgba(171, 119, 171, 0.95); }
+
+.box-carrito {
+  align-items: center;
+  display: flex;
+  justify-content: center; }
+
+.ofertasSemana h2 {
+  font-family: 'Chau Philomene One', sans-serif;
+  font-size: 35px;
+  text-align: center;
+  letter-spacing: 5px;
+  color: #ff3fd6;
+  background-color: rgba(247, 190, 229, 0.563);
+  margin-top: 90px; }
+
+.renuevan {
+  display: flex;
+  justify-content: center;
+  color: #ff3fd6;
+  font-size: 12px; }
+
+.figurasOfertas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+
+.figurasOfertas article img {
+  width: 250px;
+  height: 250px; }
+
+.figurasOfertas article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  align-items: center;
+  margin-bottom: 70px;
+  height: 380px;
+  margin-top: 60px;
+  padding: 8px;
+  text-align: center; }
+
+.figurasOfertas article:hover {
+  transition: 0.3s;
+  box-shadow: 3px 1px 8px 1px rgba(171, 119, 171, 0.95); }
+
+li a {
+  color: #ff00cc;
+  text-decoration: double; }
+
+.descuento {
+  background-color: #fb3b3b;
+  color: white;
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 3px;
+  cursor: pointer; }
+
+.descuento2 {
+  display: flex; }
+
+.descuento2 h3 {
+  display: flex;
+  margin-right: 10px;
+  font-size: 18px; }
+
+/* galeria */
+.gridcontainer {
+  display: grid;
+  grid-template-columns: 280px 280px 280px 280px;
+  grid-template-rows: 22rem;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: space-evenly;
+  margin-top: 50px; }
+
+.gridcontainer article {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffe0f7; }
+
+.gridcontainer article:hover {
+  transition: 0.3s;
+  box-shadow: 3px 1px 8px 1px rgba(171, 119, 171, 0.95); }
+
+.gridcontainer article img {
+  width: 250px;
+  height: 250px;
+  cursor: pointer; }
+
+.fotos-grid {
+  margin-top: 7px; }
+
+.losMasVendidos h2 {
+  font-family: 'Chau Philomene One', sans-serif;
+  font-size: 35px;
+  text-align: center;
+  letter-spacing: 5px;
+  color: #ff3fd6;
+  margin-top: 100px;
+  background-color: rgba(247, 190, 229, 0.563); }
+
+.agregarCarrito {
+  background-color: #fdf55f;
+  width: 250px;
+  height: 40px;
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 8px; }
+
+.agregarCarrito2 {
+  background-color: #fdf55f;
+  width: 250px;
+  height: 40px;
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 8px; }
+
+.agregarCarrito:hover {
+  transition: 0.3s;
+  background-color: #897504;
+  color: white;
+  border: none; }
+
+.agregarCarrito2:hover {
+  transition: 0.3s;
+  background-color: #897504;
+  color: white;
+  border: none; }
+
+footer {
+  background-color: #a86b9c;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-top: 65px;
+  padding-bottom: 40px; }
+  footer .boxFooter {
+    display: flex;
+    flex-wrap: wrap; }
+  footer h4 {
+    color: #fff537;
+    font-size: 17px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 15px; }
+  footer a {
+    color: #fff537;
+    font-size: 18px; }
+
+.whatsapp {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  right: 15px;
+  bottom: 15px; }
+
+/* MEDIA QUERY */
+@media (max-width: 1240px) {
+  .ingresa-registrate-carrito {
+    display: flex;
+    flex-direction: column; }
+  .navbar-brand img {
+    width: 19%;
+    display: flex;
+    margin-top: 40px;
+    margin-left: 100px; } }
+
+@media (max-width: 991px) {
+  .navbar-toggler {
+    background-color: #ed9bd6; }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    position: relative; }
+  .navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 20px; }
+  .collapse navbar-collapse {
+    width: 10%; }
+  .ingresa-registrate-carrito {
+    position: absolute; }
+  .container-fluid {
+    position: absolute;
+    top: 30px; } }
+
+@media (max-width: 1226px) {
+  .gridcontainer {
+    display: grid;
+    grid-template-columns: 280px 280px 280px; }
+  .agregarCarrito2 {
+    width: 170px; } }
+
+@media (max-width: 880px) {
+  .gridcontainer {
+    display: grid;
+    grid-template-columns: 280px 280px; } }
+
+@media (max-width: 900px) {
+  .mapaGrid {
+    width: 230px;
+    height: 230px; } }
+
+@media (max-width: 770px) {
+  .boxFooter {
+    display: flex;
+    flex-direction: column; }
+  .boxFooterGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px; }
+  .inputs {
+    width: 260px; }
+  .stitch img {
+    width: 140px;
+    height: 150px; }
+  .boxQuienes {
+    height: 200px;
+    width: 500px; }
+  .boxQuienes p {
+    font-size: 15px; }
+  .boxQuienes h2 {
+    font-size: 25px; }
+  .proximosIngresosGrid {
+    font-size: 28px; } }
+
+@media (max-width: 1100px) {
+  .boxCasillas {
+    display: flex;
+    justify-content: flex-start; }
+  .inputregistrate {
+    display: flex;
+    justify-content: flex-start; }
+  .olvidastepw {
+    display: flex;
+    justify-content: flex-start; }
+  .h2IniciarSesion {
+    font-size: 20px; }
+  .navbar-brand img {
+    display: none; }
+  .card article {
+    border: solid 5px #ffe0f7; } }
+
+@media (max-width: 580px) {
+  .gridcontainer {
+    display: grid;
+    grid-template-columns: 280px; }
+  .boxCategorias2Grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 450px 230px 300px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px; }
+  .ingresa-registrate-carrito {
+    margin-right: 70px; }
+  .boxQuienes {
+    height: 230px;
+    width: 350px; }
+  .boxQuienes h2 {
+    font-size: 23px; }
+  .boxQuienes p {
+    font-size: 14px; }
+  .form-control me-2 {
+    width: 60px;
+    height: 20px; }
+  .ingresaRegistrate {
+    display: flex;
+    justify-content: flex-start; }
+  .ingresaBoton {
+    background-color: rgba(250, 128, 114, 0); }
+  .ingresaBoton a {
+    background-color: #f9cbec;
+    padding: 8px;
+    margin-left: 0px; }
+  .registrateBoton {
+    background-color: rgba(250, 128, 114, 0); }
+  .registrateBoton a {
+    background-color: #f9cbec;
+    padding: 8px;
+    margin-left: 0px; }
+  .carrito img {
+    width: 40px;
+    height: 45px; }
+  .d-flex input {
+    width: 100px;
+    height: 35px;
+    font-size: 12px; }
+  .d-flex button {
+    width: 60px;
+    font-size: 12px;
+    height: 35px; }
+  .d-flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 30px; }
+  .navbar {
+    display: flex;
+    justify-content: flex-start; } }
+
+@media (max-width: 360px) {
+  .boxQuienes {
+    width: 270px;
+    height: 280px; }
+  .whatsapp {
+    display: none; }
+  .ingresaRegistrate {
+    width: 50px; }
+  .ingresa-registrate-carrito {
+    width: 80px; }
+  .d-flex {
+    width: 80px; } }
