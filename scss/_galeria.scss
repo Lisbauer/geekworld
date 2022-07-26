@@ -1,10 +1,5 @@
-.boxQuienes{
-    background-color: map-get($colores , "background-quienes-somos" );
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
+.box__quienes{
+    @include flex (column, center, 0 auto, 50%, map-get($colores , "background-quienes-somos" ));
     padding-top: 2%;
     padding-bottom: 8%;
     margin-top: 3%;
@@ -15,7 +10,7 @@
         transform: translateX((0px));
         box-shadow: 100px 100px 200px hotpink, 100px -100px 200px yellow, -100px -100px 200px lightblue, -100px 100px 200px purple;
         }    
-            .quienesSomos{
+            &__somos{
                 font-family: 'Chau Philomene One', sans-serif;
                 font-size: 40px;
                 text-align: center;
@@ -24,66 +19,48 @@
                 color: map-get($colores , "quienes-somos-letra" );
                 padding-bottom: 18px;
                 }
-                    .parrafoDescripcion{
+                    &__somos__parrafo{
                         color:map-get($colores , "parrafo-quienes-somos" );
                         text-align:center;
                         font-size: 20px;
                         margin: 2px auto;
                         }      
 }
-
-
-.ultimosIngresos h2{
-    font-family: 'Chau Philomene One', sans-serif;
-    font-size: 35px;
-    text-align: center;
-    letter-spacing: 5px;
-    color: rgb(255, 63, 214);
-    margin-top: 100px;
-    background-color: map-get($colores, "background-ultimos-ingresos" );
+.ultimos__ingresos h2{
+    @include h2index ('Chau Philomene One', 35px, center, 5px, rgb(255, 63, 214), 100px, map-get($colores , "background-ultimos-ingresos" ) );
 }
-.figurasUltimosingresos{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+.ultimos__ingresos__figuras{
+    @include flexrow(row, space-evenly, wrap);
+        article{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            background-color: rgb(255, 255, 255);
+            color: black;
+            align-items:center;
+            height: 338px;
+            margin-top: 50px;
+            text-align: center;
+            padding: 6px;
+                &:hover{
+                    transition: 0.3s;
+                    box-shadow: 3px 1px 8px 1px rgba(171,119,171,0.95);
+                }
+                img{
+                @extend %imagenesgaleria;
+                }
+        }
 }
-.figurasUltimosingresos article img{
-    width: 250px;
-    height: 250px;
-}
-.boxUltimosIngresosYOfertas h4{
+.ingresos__vendidos__ofertas h4{
     padding: 15px;
-}
-.figurasUltimosingresos article{
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    background-color: rgb(255, 255, 255);
-    color: black;
-    align-items:center;
-    height: 338px;
-    margin-top: 50px;
-    text-align: center;
-    padding: 6px;
-}
-.figurasUltimosingresos article:hover{
-    transition: 0.3s;
-    box-shadow: 3px 1px 8px 1px rgba(171,119,171,0.95);
 }
 .box-carrito{
     align-items: center;
     display: flex;
     justify-content: center;
 }
-.ofertasSemana h2{
-    font-family: 'Chau Philomene One', sans-serif;
-    font-size: 35px;
-    text-align: center;
-    letter-spacing: 5px;
-    color: rgb(255, 63, 214);
-    background-color: rgba(247, 190, 229, 0.563);
-    margin-top: 90px;
+.ofertas__semana h2{
+    @include h2index ('Chau Philomene One', 35px, center, 5px, rgb(255, 63, 214), 90px, map-get($colores , "background-ultimos-ingresos" ) );
 }
 .renuevan{
     display: flex;
@@ -91,38 +68,33 @@
     color: rgb(255, 63, 214);
     font-size: 12px;
 }
-.figurasOfertas{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-
+.ofertas__semana__figuras{
+    @include flexrow(row, space-evenly, wrap);
+            article{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            background-color: rgb(255, 255, 255);
+            color: black;
+            align-items:center;
+            margin-bottom: 70px;
+            height: 380px;
+            margin-top: 60px;
+            padding: 8px;
+            text-align: center;
+                &:hover{
+                    transition: 0.3s;
+                    box-shadow: 3px 1px 8px 1px rgba(171,119,171,0.95);
+                }
+                img{
+                @extend %imagenesgaleria;
+            }
+                li a{
+                color: rgb(255, 0, 204);
+                text-decoration: double;
+            }
+        }
   }
-  .figurasOfertas article img{
-      width: 250px;
-      height: 250px;
-  }
-  .figurasOfertas article{
-      display: flex;
-      flex-direction: column;
-      justify-content:center;
-      background-color: rgb(255, 255, 255);
-      color: black;
-      align-items:center;
-      margin-bottom: 70px;
-      height: 380px;
-      margin-top: 60px;
-      padding: 8px;
-      text-align: center;
-}
-.figurasOfertas article:hover{
-    transition: 0.3s;
-    box-shadow: 3px 1px 8px 1px rgba(171,119,171,0.95);
-}
-li a{
-    color: rgb(255, 0, 204);
-    text-decoration: double;
-}
 .descuento{
     background-color: rgb(251, 59, 59);
     color: white;
@@ -133,16 +105,13 @@ li a{
 }
 .descuento2{
     display: flex;
+        h3{
+            display: flex;
+            margin-right: 10px;
+            font-size: 18px;
+        }
 }
-.descuento2 h3{
-    display: flex;
-    margin-right: 10px;
-    font-size: 18px;
-}
-
-/* galeria */
-
-.gridcontainer{
+.grid__container{
     display: grid;
     grid-template-columns: 280px 280px 280px 280px;
     grid-template-rows: 22rem;
@@ -150,36 +119,31 @@ li a{
     grid-row-gap: 20px;
     justify-content: space-evenly;
     margin-top: 50px;
-    
+        article{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(255, 224, 247);
+                &:hover{
+                    transition: 0.3s;
+                    box-shadow: 3px 1px 8px 1px rgba(171,119,171,0.95);
+                }
+            }
+            img{
+            @extend %imagenesgaleria;
+            }
 }
-.gridcontainer article{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(255, 224, 247);
-}
-.gridcontainer article:hover{
-    transition: 0.3s;
-    box-shadow: 3px 1px 8px 1px rgba(171,119,171,0.95);
-}
-.gridcontainer article img{
-    width: 250px;
-    height: 250px;
-    cursor:pointer;
-}
-.fotos-grid{
-    margin-top: 7px;
-}
-.losMasVendidos h2{
-    font-family: 'Chau Philomene One', sans-serif;
+.los__mas__vendidos h2{
+    @include h2index ('Chau Philomene One', 35px, center, 5px, rgb(255, 63, 214), 100px, map-get($colores , "background-ultimos-ingresos" ) );
+    /*font-family: 'Chau Philomene One', sans-serif;
     font-size: 35px;
     text-align: center;
     letter-spacing: 5px;
     color: rgb(255, 63, 214);
     margin-top: 100px;
-    background-color: rgba(247, 190, 229, 0.563);
+    background-color: map-get($colores , "background-ultimos-ingresos" );*/
 }
 .agregarCarrito{
     background-color: rgb(253, 245, 95);
@@ -190,26 +154,10 @@ li a{
     cursor: pointer;
     padding: 12px;
     border-radius: 8px;
-}
-.agregarCarrito2{
-    background-color: rgb(253, 245, 95);
-    width: 250px;
-    height: 40px;
-    font-size: 16px;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    padding: 12px;
-    border-radius: 8px;
-}
-.agregarCarrito:hover{
-    transition: 0.3s;
-    background-color: rgb(137, 117, 4);
-    color: rgb(255, 255, 255);
-    border: none;
-}
-.agregarCarrito2:hover{
-    transition: 0.3s;
-    background-color: rgb(137, 117, 4);
-    color: rgb(255, 255, 255);
-    border: none;
+        &:hover{
+            transition: 0.3s;
+            background-color: rgb(137, 117, 4);
+            color: rgb(255, 255, 255);
+            border: none;
+        }
 }

@@ -13,7 +13,7 @@ footer{
         }
 
     h4{
-        color: map-get($colores , "footer-h4" );
+        color: map-get($colores , "footer-letra" );
         font-size: map-get($font-size , "footer-h4" );
         text-align: center;
         display: flex;

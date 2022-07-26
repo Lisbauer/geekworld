@@ -2,12 +2,13 @@
 @media (max-width: 1240px){
     .ingresa-registrate-carrito{
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
+        margin-top: 0px;
     }
     .navbar-brand img{
         width: 19%;
         display: flex;
-        margin-top: 40px;
+        margin-top: 10px;
         margin-left: 100px;
     }
 }
@@ -39,7 +40,7 @@
     }
 }
 @media (max-width: 1226px) {
-    .gridcontainer{
+    .grid__container{
         display: grid;
         grid-template-columns: 280px 280px 280px;
     }
@@ -48,7 +49,7 @@
     }
 }
 @media (max-width: 880px) {
-    .gridcontainer{
+    .grid__container{
         display: grid;
         grid-template-columns: 280px 280px;
     }
@@ -78,14 +79,14 @@
        width: 140px;
        height: 150px;
     }
-    .boxQuienes{
+    .box__quienes{
         height: 200px;
         width: 500px;
     }
-    .boxQuienes p{
+    .box__quienes p{
         font-size: 15px;
     }
-    .boxQuienes h2{
+    .box__quienes h2{
         font-size: 25px;
     }
     .proximosIngresosGrid{
@@ -117,7 +118,7 @@
 
 }
 @media (max-width: 580px) {
-    .gridcontainer{
+    .grid__container{
         display: grid;
         grid-template-columns: 280px;
     }
@@ -131,14 +132,14 @@
     .ingresa-registrate-carrito{
         margin-right: 70px;
     }
-    .boxQuienes{
+    .box__quienes{
         height: 230px;
         width: 350px;
     }
-    .boxQuienes h2{
+    .box__quienes h2{
         font-size: 23px;
     }
-    .boxQuienes p{
+    .box__quienes p{
         font-size: 14px;
     }
     .form-control me-2{
@@ -192,7 +193,7 @@
     }
 }
 @media (max-width: 360px) {
-    .boxQuienes{
+    .box__quienes{
         width: 270px;
         height: 280px;
     }
@@ -207,5 +208,169 @@
     }
     .d-flex{
         width: 80px;
+    }
+}
+@media (max-width: 425px) {
+    .navbar{
+        height: 130px;
+        background-image: url(../imagenes/nezukofondo3.jpg);
+    }
+    .los__mas__vendidos h2 {
+        font-size: 21px;
+    }
+    .ofertas__semana h2{
+        font-size: 21px;
+    }
+    .ultimos__ingresos h2{
+        font-size: 21px;
+    }
+    .ingresaBoton{
+        width: 30px;
+        height: 17px;
+        font-size: 13px;
+    }
+    .registrateBoton{
+        height: 17px;
+        padding-left: 35px;
+        font-size: 13px;
+    }
+    .carrito img{
+        height: 35px;
+        width: 35px;
+        margin-top: 10px;
+    }
+    .d-flex input{
+        height: 30px;
+    }
+    .d-flex button{
+        height: 30px;
+    }
+    .grid__container article{
+        height: 200px;
+        width: 180px;
+    }
+    .grid__container img{
+        height: 110px;
+        width: 110px;
+    }
+    .grid__container p{
+        font-size: 12px;
+    }
+    .agregarCarrito{
+        width: 150px;
+        font-size: 11px;
+    }
+    .grid__container{
+        display: grid;
+        grid-template-columns: 180px 180px;
+        grid-template-rows: 200px 200px;
+        margin: 0px 0px 0px;
+        justify-content: center;
+    }
+    .ultimos__ingresos h2{
+        margin-top: 50px;
+    }
+    .horarios{
+        font-size: 13px;
+        padding: 0px;
+    }
+    .contactanos h4{
+        font-size: 13px;
+        padding: 0px;
+    }
+    .showroom h4{
+        font-size: 13px;
+        padding: 0px;
+    }
+    .metodosdepago h4{
+        font-size: 13px;
+        padding: 0px;
+    }
+    .boxHorarios ul li{
+        font-size: 12px;
+    }
+    .contactanos li{
+        font-size: 12px;
+    }
+    .showroom li{
+        font-size: 12px;
+    }
+    .metodosdepago li{
+        font-size: 12px;
+    }
+ }
+    @media (max-width: 375px) {
+        .grid__container article{
+            height: 190px;
+            width: 160px;
+        }
+        .grid__container img{
+            height: 100px;
+            width: 100px;
+        }
+        .grid__container p{
+            font-size: 12px;
+        }
+        .agregarCarrito{
+            width: 130px;
+            font-size: 11px;
+        }
+        .grid__container{
+            display: grid;
+            grid-template-columns: 150px 150px;
+            grid-template-rows: 180px 180px;
+            margin: 0px 0px 0px;
+            justify-content: center;
+        }
+    }
+    @media (max-width: 340px) {
+        .grid__container article{
+            height: 175px;
+            width: 140px;
+        }
+        .grid__container img{
+            height: 85px;
+            width: 85px;
+        }
+        .grid__container p{
+            font-size: 10px;
+        }
+        .agregarCarrito{
+            width: 100px;
+            font-size: 11px;
+        }
+        .ingresos__vendidos__ofertas h4{
+            padding: 7px;
+        }
+        .grid__container{
+            display: grid;
+            grid-template-columns: 130px 130px;
+            grid-template-rows: 170px 170px;
+            margin: 0px 0px 0px;
+            justify-content: center;
+        }
+        .box__quienes{
+            width: 290px;
+            height: 230px;
+        }
+    }
+@media (max-width: 990px) {
+    .navbar-nav li{
+        margin-top: 0px;
+    }
+    .navbar-toggler-icon{
+        width: 20px;
+    }
+    .navbar-toggler{
+        width: 60px;
+    }
+    .box__quienes h2{
+        margin-bottom: 20px;
+    }
+    .box__quienes p{
+        margin-bottom: 50px;
+    }
+    .box__quienes{
+        height: 340px;
     }
 }

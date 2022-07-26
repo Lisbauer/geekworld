@@ -1,0 +1,23 @@
+@mixin flex ($direction, $justify, $margin, $width, $bgcolor){
+display: flex;
+flex-direction: $direction;
+justify-content: $justify;
+margin: $margin;
+width: $width;
+background-color: $bgcolor;
+}
+@mixin flexrow ($direction, $justify, $wrap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
+@mixin h2index ($font, $size, $align, $spacing, $color, $margtop, $bgcolor){
+    font-family: $font;
+    font-size: $size;
+    text-align: $align;
+    letter-spacing: $spacing;
+    color: $color;
+    margin-top: $margtop;
+    background-color: $bgcolor;
+}
