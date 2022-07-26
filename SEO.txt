@@ -1,0 +1,28 @@
+KEYWORDS
+INDEX: "figuras de anime, videojuegos, series y peliculas, coleccionistas, impresion 3d, naruto, kimetsu, gamer, game of thrones, attack on titan, anime, japon, pokemon, resina"
+
+PREVENTA:"figuras de anime, videojuegos, series y peliculas, coleccionistas, impresion 3d, naruto, kimetsu, gamer, game of thrones, attack on titan, anime, japon, pokemon, resina, preventas, novedades anime"
+
+CATALOGO:"figuras de anime, videojuegos, series y peliculas, coleccionistas, impresion 3d, naruto, kimetsu, gamer, game of thrones, attack on titan, anime, japon, pokemon, resina, catalogo anime"
+
+NOSOTROS: figuras de anime, videojuegos, series y peliculas, coleccionistas, impresion 3d, naruto, kimetsu, gamer, game of thrones, attack on titan, anime, japon, pokemon, resina, empresa figuras anime"
+
+INGRESA:"figuras de anime, videojuegos, series y peliculas, coleccionistas, impresion 3d, naruto, kimetsu, gamer, game of thrones, attack on titan, anime, japon, pokemon, resina"
+
+DESCRIPCION
+Index: "Tienda dedicada a la venta de figuras importadas de japon de los mejores fabricantes. Enterate aca de las novedades en el mundo geek! Envios a todo el pais."
+
+Preventa:"Preventa de figuras importadas de japon de los mejores fabricantes. Enterate aca de las novedades en el mundo geek! Envios a todo el pais."
+
+Catalogo: "Te invitamos a que mires nuestro catalogo, y si no encontras lo que estas buscando,podes contactarte con nosotros para brindarte informacion sobre la importacion personal que ofrecemos."
+
+Nosotros:"Conoce un poco mas de nosotros, la tienda numero uno de Argentina dedicada a la importacion de figuras coleccionables de anime, series, videosjuegos y mucho mas. Traemos por encargo. Atencion telefonica via whatsapp."
+
+Ingresa: "Inicia sesion o registrate en nuestra tienda online para enterarte de todas nuestras novedades, ofertas semanales, cupones de hasta 75% off!"
+
+TITULOS
+Index: Tienda Geekworld
+Preventa: Preventa de figuras
+Catalogo: Nuestro catalogo
+Nosotros: Conocenos
+Ingresa: Iniciar sesion
