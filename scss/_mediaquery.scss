@@ -11,8 +11,25 @@
         margin-top: 10px;
         margin-left: 100px;
     }
+    .list-group-item{
+        width: 170px;
+        font-size: 14px;
+    }
+    .list-group-section h4{
+        font-size: 18px;
+    }
+    .boxCategoriasGrid h2{
+        font-size: 36px;
+        margin-top: 90px;
+    }
 }
-
+@media (max-width: 1350px){
+    .ingresa-registrate-carrito{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+    }
+}
 @media (max-width: 991px) {
     .navbar-toggler{
         background-color: rgb(237, 155, 214);
@@ -45,9 +62,9 @@
         grid-template-columns: 280px 280px 280px;
     }
     .agregarCarrito2{
-        width: 170px;
+    width: 170px;
     }
-}
+    }
 @media (max-width: 880px) {
     .grid__container{
         display: grid;
@@ -92,6 +109,25 @@
     .proximosIngresosGrid{
         font-size: 28px;
     }
+    .list-group-section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .h4series{
+        margin-top: 30px;
+    }
+    .h4peliculas{
+        margin-top: 30px;
+    }
+    .card{
+        width: 230px;
+        height: 300px;
+    }
+    .agregarCarrito2{
+        width: 140px;
+        height: 27px;
+        padding: 5px;
+    }
 }
 @media (max-width: 1100px) {
     .boxCasillas{
@@ -115,7 +151,9 @@
     .card article{
        border: solid 5px rgb(255, 224, 247);
     }
-
+    .list-group-section{
+        margin-left: 100px;
+    }
 }
 @media (max-width: 580px) {
     .grid__container{
@@ -153,26 +191,27 @@
 
     .ingresaBoton {
         background-color: rgba(250, 128, 114, 0);
+        width: 90px;
     }
     .ingresaBoton a{
-        background-color: rgb(249, 203, 236);
-        padding: 8px;
-        margin-left: 0px;
+        /*background-color: rgb(249, 203, 236);*/
     }
     .registrateBoton{
         background-color: rgba(250, 128, 114, 0);
+        width: 100px;
     }
     .registrateBoton a{
-        background-color: rgb(249, 203, 236);
-        padding: 8px;
+        /*background-color: rgb(249, 203, 236);*/
         margin-left: 0px;
     }
     .carrito img{
         width: 40px;
         height: 45px;
+        margin-left: 10px;
+        margin-top: 5px;
     }
     .d-flex input{
-        width: 100px;
+        width: 160px;
         height: 35px;
         font-size: 12px;
     }
@@ -185,11 +224,29 @@
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        margin-left: 30px;
+        margin-left: 10px;
     }
     .navbar{
         display: flex;
         justify-content: flex-start;
+    }
+    .list-group-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .list-group-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .list-group{
+        align-items: center;
+    }
+    .list-group-section h4{
+        margin-top: 30px;
     }
 }
 @media (max-width: 360px) {
@@ -209,6 +266,9 @@
     .d-flex{
         width: 80px;
     }
+    .list-group-section{
+        margin-left: 60px;
+    }
 }
 @media (max-width: 425px) {
     .navbar{
@@ -225,19 +285,20 @@
         font-size: 21px;
     }
     .ingresaBoton{
-        width: 30px;
-        height: 17px;
+        width: 80px;
+        height: 30px;
         font-size: 13px;
+        padding: 4px;
     }
     .registrateBoton{
-        height: 17px;
-        padding-left: 35px;
+        width: 100px;
+        height: 30px;
         font-size: 13px;
+        padding: 4px;
     }
     .carrito img{
         height: 35px;
         width: 35px;
-        margin-top: 10px;
     }
     .d-flex input{
         height: 30px;
@@ -297,6 +358,21 @@
     }
     .metodosdepago li{
         font-size: 12px;
+    }
+    .card{
+        width: 180px;
+        height: 260px;
+    }
+    .agregarCarrito2{
+        width: 110px;
+        padding: 5px;
+        font-size: 12px;
+    }
+    .proximosIngresosGrid{
+        font-size: 20px;
+    }
+    .navbar-toggler{
+        width: 0px;
     }
  }
     @media (max-width: 375px) {

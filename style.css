@@ -117,7 +117,7 @@ header{
 }
 /* MEDIA QUERIES NAV BOOTSTRAP */
 
-@media (max-width: 1240px){
+/* @media (max-width: 1240px){
     .ingresa-registrate-carrito{
         display: flex;
         flex-direction: column; 
@@ -155,7 +155,7 @@ header{
         position: absolute;
         top: 30px;
     }
-}
+} */
 .boxQuienes{
     background-color: rgb(247, 190, 229);
     width: 50%;
@@ -413,7 +413,7 @@ justify-content: space-evenly;
     margin: 2px auto;
 }
 /*CATALOGO*/
-.h2catalogo{
+/* .h2catalogo{
     text-align: center;
     margin-top: 85px;
     font-size: 45px;
@@ -477,9 +477,9 @@ justify-content: space-evenly;
     transition: 1.1s all;
     transform: translateX((0px));
     box-decoration-break: slice 40px;
-}
+} */
 /*INGRESA*/
-.h2IniciarSesion{
+/* .h2IniciarSesion{
     text-align: center;
     margin-top: 80px;
     font-size: 24px;
@@ -547,7 +547,7 @@ justify-content: space-evenly;
     padding-bottom: 2%;
     margin-top: 3%;
     border: 3px solid yellow; 
-}
+} */
 /* GRID INDEX */
 .gridcontainer{
     display: grid;
@@ -597,7 +597,7 @@ justify-content: space-evenly;
     padding: 12px;
     border-radius: 8px;
 }
-.agregarCarrito2{
+/* .agregarCarrito2{
     background-color: rgb(253, 245, 95);
     width: 250px;
     height: 40px;
@@ -606,21 +606,21 @@ justify-content: space-evenly;
     cursor: pointer;
     padding: 12px;
     border-radius: 8px;
-}
+} */
 .agregarCarrito:hover{
     transition: 0.3s;
     background-color: rgb(137, 117, 4);
     color: rgb(255, 255, 255);
     border: none;
 }
-.agregarCarrito2:hover{
+/* .agregarCarrito2:hover{
     transition: 0.3s;
     background-color: rgb(137, 117, 4);
     color: rgb(255, 255, 255);
     border: none;
-}
+} */
 /* PREVENTA GRID */
-.proximosIngresosSectionGrid{
+/* .proximosIngresosSectionGrid{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(23rem, 4fr));
     grid-template-rows: 18rem;
@@ -660,9 +660,9 @@ justify-content: space-evenly;
 .proximosIngresosSectionGrid article{
     width: 250px;
     background-color: rgb(233, 126, 190);
-}
+} */
 /* Nosotros GRID */
-.boxMainGrid{
+/* .boxMainGrid{
     display: grid;
     grid-template-columns: 22rem;
     grid-auto-rows: repeat(auto-fill, minmax(15rem, 1fr));
@@ -734,9 +734,9 @@ justify-content: space-evenly;
     justify-content: center;
     width: 400px;
     height: 400px;
-}
+} */
 /* CATALOGO GRID */
-.boxCategorias2Grid{
+/* .boxCategorias2Grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
@@ -745,7 +745,7 @@ justify-content: space-evenly;
 }
 .boxCategorias2Grid li{
     margin: 9px;
-}
+} */
 /* INGRESA GRID FOOTER */
 .boxFooterGrid{
     display: grid;
@@ -755,186 +755,7 @@ justify-content: space-evenly;
     grid-row-gap: 10px;
 }
 
-/* MEDIA QUERY */
-@media (max-width: 1226px) {
-    .gridcontainer{
-        display: grid;
-        grid-template-columns: 280px 280px 280px;
-    }
-    .agregarCarrito2{
-        width: 170px;
-    }
-}
-@media (max-width: 880px) {
-    .gridcontainer{
-        display: grid;
-        grid-template-columns: 280px 280px;
-    }
-}
 
-@media (max-width: 900px) {
-    .mapaGrid{
-    width: 230px;
-    height: 230px;
-    }
-}
-
-@media (max-width: 770px) {
-    .boxFooter{
-        display: flex;
-        flex-direction: column;
-    }
-    .boxFooterGrid{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-    }
-    .inputs{
-        width: 260px;
-    }
-    .stitch img{
-       width: 140px;
-       height: 150px;
-    }
-    .boxQuienes{
-        height: 200px;
-        width: 500px;
-    }
-    .boxQuienes p{
-        font-size: 15px;
-    }
-    .boxQuienes h2{
-        font-size: 25px;
-    }
-    .proximosIngresosGrid{
-        font-size: 28px;
-    }
-}
-@media (max-width: 1100px) {
-    .boxCasillas{
-        display: flex;
-        justify-content: flex-start;
-    }
-    .inputregistrate{
-    display: flex;
-    justify-content: flex-start;
-    }
-    .olvidastepw{
-        display: flex;
-        justify-content: flex-start;
-    }
-    .h2IniciarSesion{
-        font-size: 20px;
-    }
-    .navbar-brand img{
-        display: none;
-    }
-    .card article{
-       border: solid 5px rgb(255, 224, 247);
-    }
-
-}
-@media (max-width: 580px) {
-    .gridcontainer{
-        display: grid;
-        grid-template-columns: 280px;
-    }
-    .boxCategorias2Grid{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 450px 230px 300px;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    }
-    .ingresa-registrate-carrito{
-        margin-right: 70px;
-    }
-    .boxQuienes{
-        height: 230px;
-        width: 350px;
-    }
-    .boxQuienes h2{
-        font-size: 23px;
-    }
-    .boxQuienes p{
-        font-size: 14px;
-    }
-    .form-control me-2{
-        width: 60px;
-        height: 20px;
-    }
-    .ingresaRegistrate{
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    .ingresaBoton {
-        background-color: rgba(250, 128, 114, 0);
-    }
-    .ingresaBoton a{
-        background-color: rgb(249, 203, 236);
-        padding: 8px;
-        margin-left: 0px;
-    }
-    .registrateBoton{
-        background-color: rgba(250, 128, 114, 0);
-    }
-    .registrateBoton a{
-        background-color: rgb(249, 203, 236);
-        padding: 8px;
-        margin-left: 0px;
-    }
-    .carrito img{
-        width: 40px;
-        height: 45px;
-    }
-    .d-flex input{
-        width: 100px;
-        height: 35px;
-        font-size: 12px;
-    }
-    .d-flex button{
-        width: 60px;
-        font-size: 12px;
-        height: 35px;
-    }
-    .d-flex{
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin-left: 30px;
-    }
-    .navbar{
-        display: flex;
-        justify-content: flex-start;
-    }
-}
-@media (max-width: 360px) {
-    .boxQuienes{
-        width: 270px;
-        height: 280px;
-    }
-    .whatsapp{
-        display: none;
-    }
-    .ingresaRegistrate{
-        width: 50px;
-    }
-    .ingresa-registrate-carrito{
-        width: 80px;
-    }
-    .d-flex{
-        width: 80px;
-    }
-
-}
-
-
-
-
-/*HOVER*/
 
 .boxMainGrid h2:hover{
     transition: 2s;
@@ -951,21 +772,13 @@ justify-content: space-evenly;
     transition: 0.3s;
     border: solid rgb(255, 255, 255);
 }
-.boxCategorias2Grid h4:hover{
-    transition: 2s;
-    transform: scale(1);
-    background-color: rgb(185, 110, 169);
-}
-.boxCategorias2Grid ul li:hover{
-    background-color: rgb(244, 91, 216);
-    transform: scale(1.6);
-}
+
 .boxCasillas input:hover{
     transition: 0.3s;
     border: solid rgb(255, 255, 255);
 }
 /* PREVENTA BOOTSTRAP */
-.card{
+/* .card{
     width: 280px;
     background-color: rgb(255, 224, 247);
     text-align: center;
@@ -1002,8 +815,8 @@ justify-content: space-evenly;
         background-color: rgb(244, 91, 216);
         transform: scale(1);
         transition: 1s;
-}
-/* ingresa bootstrap */
+} */
+/* ingresa bootstrap
 .mb-3 {
   width: 330px;
 }
@@ -1013,4 +826,4 @@ justify-content: space-evenly;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-}
+} */

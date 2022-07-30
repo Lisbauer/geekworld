@@ -2,7 +2,7 @@
     @include flex (column, center, 0 auto, 50%, map-get($colores , "background-quienes-somos" ));
     padding-top: 2%;
     padding-bottom: 8%;
-    margin-top: 3%;
+    margin-top: 140px;
     border: 3px solid yellow;
     cursor:pointer;
     &:hover{
@@ -28,6 +28,10 @@
 }
 .ultimos__ingresos h2{
     @include h2index ('Chau Philomene One', 35px, center, 5px, rgb(255, 63, 214), 100px, map-get($colores , "background-ultimos-ingresos" ) );
+    margin-top: 200px;
+    &:hover{
+        background-image: linear-gradient(to right, rgba(255, 105, 180, 0.504), pink, rgba(244, 250, 137, 0.742), pink);
+    }
 }
 .ultimos__ingresos__figuras{
     @include flexrow(row, space-evenly, wrap);
@@ -60,7 +64,11 @@
     justify-content: center;
 }
 .ofertas__semana h2{
-    @include h2index ('Chau Philomene One', 35px, center, 5px, rgb(255, 63, 214), 90px, map-get($colores , "background-ultimos-ingresos" ) );
+    @include h2index ( 'Chau Philomene One', 35px, center, 5px, rgb(255, 63, 214), 90px, map-get($colores , "background-ultimos-ingresos" ) );
+    margin-top: 200px;
+    &:hover{
+        background-image: linear-gradient(to right, rgba(255, 105, 180, 0.504), pink, rgba(244, 250, 137, 0.742), pink);
+    }
 }
 .renuevan{
     display: flex;
@@ -137,13 +145,11 @@
 }
 .los__mas__vendidos h2{
     @include h2index ('Chau Philomene One', 35px, center, 5px, rgb(255, 63, 214), 100px, map-get($colores , "background-ultimos-ingresos" ) );
-    /*font-family: 'Chau Philomene One', sans-serif;
-    font-size: 35px;
-    text-align: center;
-    letter-spacing: 5px;
-    color: rgb(255, 63, 214);
-    margin-top: 100px;
-    background-color: map-get($colores , "background-ultimos-ingresos" );*/
+    margin-top: 170px;
+    &:hover{
+        background-image: linear-gradient(to right, rgba(255, 105, 180, 0.504), pink, rgba(244, 250, 137, 0.742), pink);
+    }
+
 }
 .agregarCarrito{
     background-color: rgb(253, 245, 95);
