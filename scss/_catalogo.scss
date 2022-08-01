@@ -21,6 +21,7 @@
     text-align: center;
     margin-top: 140px;
     font-size: 65px;
+    cursor: pointer;
     color: rgb(255, 63, 214);
     font-family: "Chau Philomene One";
     letter-spacing: 10px;
@@ -120,12 +121,20 @@
 
 
 
-/*ACORDION*/
+/*HOVER*/
+.thumb span { 
+	position:absolute;
+	visibility:hidden;
+}
+.thumb:hover, .thumb:hover span { 
+	visibility:visible;
+	top:0;
+	left:100px; 
+	z-index:1;
+}
+.hoverimg{
+    width: 100px;
+    height: 100px;
+}
 
-.accordion-item{
-    width: 300px;
-}
-.accordion{
-    display: flex;
-    justify-content: center;
-}
+

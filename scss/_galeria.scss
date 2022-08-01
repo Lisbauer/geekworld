@@ -29,6 +29,7 @@
 .ultimos__ingresos h2{
     @include h2index ('Chau Philomene One', 35px, center, 5px, rgb(255, 63, 214), 100px, map-get($colores , "background-ultimos-ingresos" ) );
     margin-top: 200px;
+    cursor: pointer;
     &:hover{
         background-image: linear-gradient(to right, rgba(255, 105, 180, 0.504), pink, rgba(244, 250, 137, 0.742), pink);
     }
@@ -66,6 +67,7 @@
 .ofertas__semana h2{
     @include h2index ( 'Chau Philomene One', 35px, center, 5px, rgb(255, 63, 214), 90px, map-get($colores , "background-ultimos-ingresos" ) );
     margin-top: 200px;
+    cursor: pointer;
     &:hover{
         background-image: linear-gradient(to right, rgba(255, 105, 180, 0.504), pink, rgba(244, 250, 137, 0.742), pink);
     }
@@ -146,6 +148,7 @@
 .los__mas__vendidos h2{
     @include h2index ('Chau Philomene One', 35px, center, 5px, rgb(255, 63, 214), 100px, map-get($colores , "background-ultimos-ingresos" ) );
     margin-top: 170px;
+    cursor: pointer;
     &:hover{
         background-image: linear-gradient(to right, rgba(255, 105, 180, 0.504), pink, rgba(244, 250, 137, 0.742), pink);
     }

@@ -1,72 +1,68 @@
-.h2IniciarSesion{
-    text-align: center;
-    margin-top: 80px;
-    font-size: 24px;
-    padding-bottom: 60px;
-}
-.casillas{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 30%;
-}
-.casillas label{
-    color: rgb(0, 0, 0);
-    font-size: 19px;
-}
-.boxCasillas{
-    display: flex;
-    justify-content: center;
-}
-.botoniniciar{
-    width: 160px;
-    color: rgb(233, 84, 174);
-    margin-top: 20px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.inputs{
-    width: 300px;
-    height: 32px;
-    border: 4px solid pink ;
- }
- .olvidastepw{
-    display: flex;
-    justify-content: center;
-    font-size: 13px;
-    margin-top: 5px;
-    padding-top: 40px;
- }
-.inputregistrate{
-    display: flex;
-    justify-content: center;
+// .h2IniciarSesion{
+//     text-align: center;
+//     margin-top: 80px;
+//     font-size: 24px;
+//     padding-bottom: 60px;
+// }
+// .casillas{
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     width: 30%;
+// }
+// .casillas label{
+//     color: rgb(0, 0, 0);
+//     font-size: 19px;
+// }
+// .boxCasillas{
+//     display: flex;
+//     justify-content: center;
+// }
+// .botoniniciar{
+//     width: 160px;
+//     color: rgb(233, 84, 174);
+//     margin-top: 20px;
+//     padding: 10px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+// .inputs{
+//     width: 300px;
+//     height: 32px;
+//     border: 4px solid pink ;
+//  }
+//  .olvidastepw{
+//     display: flex;
+//     justify-content: center;
+//     font-size: 13px;
+//     margin-top: 5px;
+//     padding-top: 40px;
+//  }
+// .inputregistrate{
+//     display: flex;
+//     justify-content: center;
 
-}
-.botonregistrate{
-    padding: 15px;
-    font-size: 16px;
-    margin-bottom: 30px;
-    margin-top: 10px;
-    color: hotpink;
-}
-.stitch img{
-    width: 220px;
-    height: 250;
-    margin-left: 45%;
-}
-.sectionCasillas{
-      background-color: rgb(247, 190, 229);
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 25%;
-    padding-bottom: 2%;
-    margin-top: 3%;
-    border: 3px solid yellow; 
-}
+// }
+// .botonregistrate{
+//     padding: 15px;
+//     font-size: 16px;
+//     margin-bottom: 30px;
+//     margin-top: 10px;
+//     color: hotpink;
+// }
+
+// .sectionCasillas{
+//       background-color: rgb(247, 190, 229);
+//     width: 50%;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     margin-left: 25%;
+//     padding-bottom: 2%;
+//     margin-top: 3%;
+//     border: 3px solid yellow; 
+// }
 
 
 
@@ -80,6 +76,26 @@
       display: flex;
       justify-content: center;
       flex-direction: column;
+      margin-bottom: 60px;
+      background-color: rgb(250, 180, 228);
+      width: 400px;
+      padding: 40px;
       align-items: center;
+      &:hover{
+          transition: 0.3s;
+          box-shadow: 3px 1px 8px 1px rgba(171,119,171,0.95);
+      }
   }
-  
+
+.section__ingresa{
+    display: flex;
+    justify-content: center;
+}
+.stitch img{
+    width: 170px;
+    height: 200px;
+}
+.stitch__caja{
+    display: flex;
+    justify-content: center;
+}

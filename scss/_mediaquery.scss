@@ -29,6 +29,9 @@
         flex-direction: column;
         margin-top: 0px;
     }
+    .geekworld__d__p{
+        font-size: 14px;
+    }
 }
 @media (max-width: 991px) {
     .navbar-toggler{
@@ -54,6 +57,21 @@
     .container-fluid{
         position: absolute;
         top: 30px;
+    }
+    .geekworld__d{
+        width: 700px;
+    }
+    .nosotros__h1{
+        font-size: 35px;
+    }
+    .seguinos{
+        font-size: 28px;
+    }
+    .donde__estamos{
+        font-size: 28px;
+    }
+    .contacto__h2{
+        font-size: 28px;
     }
 }
 @media (max-width: 1226px) {
@@ -93,8 +111,8 @@
         width: 260px;
     }
     .stitch img{
-       width: 140px;
-       height: 150px;
+       width: 120px;
+       height: 135px;
     }
     .box__quienes{
         height: 200px;
@@ -128,6 +146,11 @@
         height: 27px;
         padding: 5px;
     }
+    .geekworld__d{
+        height: 430px;
+        width: 450px;
+    }
+
 }
 @media (max-width: 1100px) {
     .boxCasillas{
@@ -247,6 +270,22 @@
     }
     .list-group-section h4{
         margin-top: 30px;
+    }
+    .numero__horario__contacto{
+        font-size: 17px;
+    }
+    .numero__horario__mail{
+        font-size: 17px;
+    }
+    .numero__horario__cliente{
+        font-size: 17px;
+    }
+    .geekworld__d{
+        width: 400px;
+        height: 350px;
+    }
+    .geekworld__d__p{
+        font-size: 12px;
     }
 }
 @media (max-width: 360px) {
@@ -374,6 +413,54 @@
     .navbar-toggler{
         width: 0px;
     }
+    .numero__horario__contacto{
+        font-size: 15px;
+    }
+    .numero__horario__mail{
+        font-size: 15px;
+    }
+    .numero__horario__cliente{
+        font-size: 15px;
+    }
+    .geekworld__d{
+        width: 300px;
+        height: 400px;
+        margin-top: 30px;
+    }
+    .geekworld__d__p{
+        font-size: 12px;
+    }
+    .contacto__h2{
+        font-size: 20px;
+    }
+    .donde__estamos{
+        font-size: 20px;
+    }
+    .seguinos{
+        font-size: 20px; 
+    }
+    .nosotros__h1{
+        font-size: 26px;
+        margin-top: 40px;
+    }
+    .numero__horario__cliente{
+        font-size: 11px;
+    }
+    .mb-form{
+        width: 300px;
+    }
+    .form-control{
+        width: 60%;
+    }
+    .mb-3{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+    .form-text{
+        font-size: 12px;
+    }
  }
     @media (max-width: 375px) {
         .grid__container article{
@@ -450,3 +537,18 @@
         height: 340px;
     }
 }
+
+
+/* FOOTER*/
+@media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
+  
