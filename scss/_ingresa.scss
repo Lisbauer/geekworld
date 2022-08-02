@@ -1,0 +1,31 @@
+.mb-3 {
+    width: 330px;
+  }
+  .mb-form{
+      margin-top: 60px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 60px;
+      background-color: rgb(250, 180, 228);
+      width: 400px;
+      padding: 40px;
+      align-items: center;
+      &:hover{
+          transition: 0.3s;
+          box-shadow: 3px 1px 8px 1px rgba(171,119,171,0.95);
+      }
+  }
+
+.section__ingresa{
+    display: flex;
+    justify-content: center;
+}
+.stitch img{
+    width: 170px;
+    height: 200px;
+}
+.stitch__caja{
+    display: flex;
+    justify-content: center;
+}

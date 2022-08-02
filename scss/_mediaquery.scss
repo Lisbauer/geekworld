@@ -11,8 +11,28 @@
         margin-top: 10px;
         margin-left: 100px;
     }
+    .list-group-item{
+        width: 170px;
+        font-size: 14px;
+    }
+    .list-group-section h4{
+        font-size: 18px;
+    }
+    .boxCategoriasGrid h2{
+        font-size: 36px;
+        margin-top: 90px;
+    }
 }
-
+@media (max-width: 1350px){
+    .ingresa-registrate-carrito{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    .geekworld__d__p{
+        font-size: 14px;
+    }
+}
 @media (max-width: 991px) {
     .navbar-toggler{
         background-color: rgb(237, 155, 214);
@@ -38,6 +58,21 @@
         position: absolute;
         top: 30px;
     }
+    .geekworld__d{
+        width: 700px;
+    }
+    .nosotros__h1{
+        font-size: 35px;
+    }
+    .seguinos{
+        font-size: 28px;
+    }
+    .donde__estamos{
+        font-size: 28px;
+    }
+    .contacto__h2{
+        font-size: 28px;
+    }
 }
 @media (max-width: 1226px) {
     .grid__container{
@@ -45,9 +80,9 @@
         grid-template-columns: 280px 280px 280px;
     }
     .agregarCarrito2{
-        width: 170px;
+    width: 170px;
     }
-}
+    }
 @media (max-width: 880px) {
     .grid__container{
         display: grid;
@@ -76,7 +111,7 @@
         width: 260px;
     }
     .stitch img{
-       width: 140px;
+       width: 120px;
        height: 150px;
     }
     .box__quienes{
@@ -92,6 +127,30 @@
     .proximosIngresosGrid{
         font-size: 28px;
     }
+    .list-group-section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .h4series{
+        margin-top: 30px;
+    }
+    .h4peliculas{
+        margin-top: 30px;
+    }
+    .card{
+        width: 230px;
+        height: 300px;
+    }
+    .agregarCarrito2{
+        width: 140px;
+        height: 27px;
+        padding: 5px;
+    }
+    .geekworld__d{
+        height: 430px;
+        width: 450px;
+    }
+
 }
 @media (max-width: 1100px) {
     .boxCasillas{
@@ -115,7 +174,9 @@
     .card article{
        border: solid 5px rgb(255, 224, 247);
     }
-
+    .list-group-section{
+        margin-left: 100px;
+    }
 }
 @media (max-width: 580px) {
     .grid__container{
@@ -153,26 +214,27 @@
 
     .ingresaBoton {
         background-color: rgba(250, 128, 114, 0);
+        width: 90px;
     }
     .ingresaBoton a{
-        background-color: rgb(249, 203, 236);
-        padding: 8px;
-        margin-left: 0px;
+        /*background-color: rgb(249, 203, 236);*/
     }
     .registrateBoton{
         background-color: rgba(250, 128, 114, 0);
+        width: 100px;
     }
     .registrateBoton a{
-        background-color: rgb(249, 203, 236);
-        padding: 8px;
+        /*background-color: rgb(249, 203, 236);*/
         margin-left: 0px;
     }
     .carrito img{
         width: 40px;
         height: 45px;
+        margin-left: 10px;
+        margin-top: 5px;
     }
     .d-flex input{
-        width: 100px;
+        width: 160px;
         height: 35px;
         font-size: 12px;
     }
@@ -185,11 +247,45 @@
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        margin-left: 30px;
+        margin-left: 10px;
     }
     .navbar{
         display: flex;
         justify-content: flex-start;
+    }
+    .list-group-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .list-group-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .list-group{
+        align-items: center;
+    }
+    .list-group-section h4{
+        margin-top: 30px;
+    }
+    .numero__horario__contacto{
+        font-size: 17px;
+    }
+    .numero__horario__mail{
+        font-size: 17px;
+    }
+    .numero__horario__cliente{
+        font-size: 17px;
+    }
+    .geekworld__d{
+        width: 400px;
+        height: 350px;
+    }
+    .geekworld__d__p{
+        font-size: 12px;
     }
 }
 @media (max-width: 360px) {
@@ -209,6 +305,9 @@
     .d-flex{
         width: 80px;
     }
+    .list-group-section{
+        margin-left: 60px;
+    }
 }
 @media (max-width: 425px) {
     .navbar{
@@ -225,19 +324,20 @@
         font-size: 21px;
     }
     .ingresaBoton{
-        width: 30px;
-        height: 17px;
+        width: 80px;
+        height: 30px;
         font-size: 13px;
+        padding: 4px;
     }
     .registrateBoton{
-        height: 17px;
-        padding-left: 35px;
+        width: 100px;
+        height: 30px;
         font-size: 13px;
+        padding: 4px;
     }
     .carrito img{
         height: 35px;
         width: 35px;
-        margin-top: 10px;
     }
     .d-flex input{
         height: 30px;
@@ -266,6 +366,7 @@
         grid-template-rows: 200px 200px;
         margin: 0px 0px 0px;
         justify-content: center;
+        margin-bottom: 20px;
     }
     .ultimos__ingresos h2{
         margin-top: 50px;
@@ -298,6 +399,69 @@
     .metodosdepago li{
         font-size: 12px;
     }
+    .card{
+        width: 180px;
+        height: 260px;
+    }
+    .agregarCarrito2{
+        width: 110px;
+        padding: 5px;
+        font-size: 12px;
+    }
+    .proximosIngresosGrid{
+        font-size: 20px;
+    }
+    .navbar-toggler{
+        width: 0px;
+    }
+    .numero__horario__contacto{
+        font-size: 15px;
+    }
+    .numero__horario__mail{
+        font-size: 15px;
+    }
+    .numero__horario__cliente{
+        font-size: 15px;
+    }
+    .geekworld__d{
+        width: 300px;
+        height: 400px;
+        margin-top: 30px;
+    }
+    .geekworld__d__p{
+        font-size: 12px;
+    }
+    .contacto__h2{
+        font-size: 20px;
+    }
+    .donde__estamos{
+        font-size: 20px;
+    }
+    .seguinos{
+        font-size: 20px; 
+    }
+    .nosotros__h1{
+        font-size: 26px;
+        margin-top: 40px;
+    }
+    .numero__horario__cliente{
+        font-size: 11px;
+    }
+    .mb-form{
+        width: 300px;
+    }
+    .form-control{
+        width: 60%;
+    }
+    .mb-3{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+    .form-text{
+        font-size: 12px;
+    }
  }
     @media (max-width: 375px) {
         .grid__container article{
@@ -321,6 +485,7 @@
             grid-template-rows: 180px 180px;
             margin: 0px 0px 0px;
             justify-content: center;
+            margin-bottom: 20px;
         }
     }
     @media (max-width: 340px) {
@@ -337,7 +502,6 @@
         }
         .agregarCarrito{
             width: 100px;
-            font-size: 11px;
         }
         .ingresos__vendidos__ofertas h4{
             padding: 7px;
@@ -348,6 +512,7 @@
             grid-template-rows: 170px 170px;
             margin: 0px 0px 0px;
             justify-content: center;
+            margin-bottom: 20px;
         }
         .box__quienes{
             width: 290px;
@@ -374,3 +539,47 @@
         height: 340px;
     }
 }
+
+
+/* FOOTER*/
+@media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
+
+  
+  @media(max-width: 370px){
+    .ultimos__ingresos__figuras article{
+        height: 250px;
+        width: 200px;
+    }
+    .ultimos__ingresos__figuras article img{
+        height: 150px;
+        width: 150px;
+        margin-top: 20px;
+    }
+    .agregarCarrito{
+        margin-bottom: 18px;
+        font-size: 11px;
+    }
+    .ofertas__semana__figuras article{
+        height: 250px;
+        width: 200px;
+        margin-bottom: 0px;
+    }
+    .ofertas__semana__figuras article img{
+        height: 150px;
+        width: 150px;
+    }
+    .descuento{
+        font-size: 12px;
+    }
+  }
+  

@@ -16,26 +16,24 @@ header{
         margin-top: 130px;
         width: 150px;
         padding: 1px 10px ;
-        background-color: map-get($colores, "navbar-li"); 
+        /*background-color: map-get($colores, "navbar-li");*/ 
+        background-image: linear-gradient(to left, #f7bee5, rgb(249, 147, 215),#f7bee5);
+        transition: 0.6s;
+        background-size: 200%;
         font-size: map-get($font-size, "navbar-li"); 
         text-align: center;
+        margin-right: 15px;
+        border-radius: 6px;
         &:hover{
-            transition: 0.3s;
+            /*transition: 0.3s;
             box-shadow: inset 6px 6px 40px 6px map-get($colores , "navbar-li-hover" );
-            color: rgb(255, 255, 255);
+            color: rgb(255, 255, 255);*/
+            background-position: right;
+        }
+        & a:hover{
+            color: white !important;
         }
     }
-}
-
-.ingresaBoton:hover{
-    transition: 0.3s;
-    box-shadow: inset 6px 6px 40px 6px rgb(237, 152, 199);
-    color: rgb(255, 255, 255);
-}
-.registrateBoton:hover{
-    transition: 0.3s;
-    box-shadow: inset 6px 6px 40px 6px rgb(237, 152, 199);
-    color: rgb(255, 255, 255);
 }
 .navbar-brand img{
     width: 18%;
@@ -56,10 +54,10 @@ header{
     height: 40px;
     width: 320px;
     margin-top: 13px;
-}
-.d-flex:hover{
-    transition: 1s;
-    border: solid 3px rgb(222, 153, 187);
+    &:hover{
+        transition: 0.3s;
+        box-shadow: 3px 1px 8px 1px rgba(63, 42, 63, 0.475);
+    }
 }
 .d-flex-barra{
     transition: 2s;
@@ -69,6 +67,7 @@ header{
     background-color: white;
 }
 .d-flex button:hover{
+    transition: 0.4s;
     background-color: rgb(249, 203, 236);
 }
 .ingresaRegistrate{
@@ -77,17 +76,45 @@ header{
     padding-left: 0%;
 }
 .ingresaBoton{
-    background-color: rgb(249, 203, 236);
     padding: 12px;
-    border-radius: 4%;
+    border-radius: 6%;
     margin: 7px;
     text-decoration: none;
+    background-image: linear-gradient(to left, #f7bee5, rgb(249, 147, 215),#f7bee5);
+    transition: 0.6s;
+    background-size: 200%;
+    width: 120px;
+    text-align: center;
+}
+.ingresaBoton:hover{
+    background-position: right;
+}
+.ingresaBoton a{
+    text-decoration: none;
+    color: #c135a3;
+}
+.ingresaBoton a:hover{
+    color: white;
 }
 .registrateBoton{
-    background-color: rgb(249, 203, 236);
     padding: 12px;
-    border-radius: 4%;
+    border-radius: 6%;
     margin: 7px;
+    background-image: linear-gradient(to left, #f7bee5, rgb(249, 147, 215),#f7bee5);
+    transition: 0.6s;
+    background-size: 200%;
+    width: 120px;
+    text-align: center;
+}
+.registrateBoton:hover{
+    background-position: right;
+}
+.registrateBoton a{
+    text-decoration: none;
+    color: #c135a3;
+}
+.registrateBoton a:hover{
+    color: white;
 }
 .carrito img{
     display: flex;
@@ -98,4 +125,5 @@ header{
 }
 .ingresa-registrate-carrito{
     margin-top: 140px;
+    margin-right: 15px;
 }
