@@ -85,13 +85,6 @@ header{
     background-size: 200%;
     width: 120px;
     text-align: center;
-    /*border: 1px solid rgb(222, 153, 187);
-    padding: 8px;
-    font-size: 15px;
-    border-radius: 4px;
-    cursor: pointer;
-    color: white;
-    width: 100px;*/
 }
 .ingresaBoton:hover{
     background-position: right;
@@ -103,11 +96,6 @@ header{
 .ingresaBoton a:hover{
     color: white;
 }
-/*.ingresaBoton:hover{
-    transition: 0.3s;
-    box-shadow: inset 6px 6px 40px 6px rgb(237, 152, 199);
-    color: rgb(255, 255, 255);
-}*/
 .registrateBoton{
     padding: 12px;
     border-radius: 6%;
@@ -119,9 +107,6 @@ header{
     text-align: center;
 }
 .registrateBoton:hover{
-    /*transition: 0.3s;
-    box-shadow: inset 6px 6px 40px 6px rgb(237, 152, 199);
-    color: rgb(255, 255, 255); */   
     background-position: right;
 }
 .registrateBoton a{

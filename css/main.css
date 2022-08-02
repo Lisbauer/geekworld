@@ -10,7 +10,6 @@ font-family: 'Chau Philomene One', sans-serif;*/
 /* Selector de etiqueta*/
 body {
   font-family: 'Montserrat', sans-serif;
-  /*background-color: map-get($colores , "background-body" );*/
   background-image: linear-gradient(to top right, #df92c5, #f6a4e5); }
 
 li {
@@ -97,14 +96,7 @@ header {
   transition: 0.6s;
   background-size: 200%;
   width: 120px;
-  text-align: center;
-  /*border: 1px solid rgb(222, 153, 187);
-    padding: 8px;
-    font-size: 15px;
-    border-radius: 4px;
-    cursor: pointer;
-    color: white;
-    width: 100px;*/ }
+  text-align: center; }
 
 .ingresaBoton:hover {
   background-position: right; }
@@ -116,11 +108,6 @@ header {
 .ingresaBoton a:hover {
   color: white; }
 
-/*.ingresaBoton:hover{
-    transition: 0.3s;
-    box-shadow: inset 6px 6px 40px 6px rgb(237, 152, 199);
-    color: rgb(255, 255, 255);
-}*/
 .registrateBoton {
   padding: 12px;
   border-radius: 6%;
@@ -132,9 +119,6 @@ header {
   text-align: center; }
 
 .registrateBoton:hover {
-  /*transition: 0.3s;
-    box-shadow: inset 6px 6px 40px 6px rgb(237, 152, 199);
-    color: rgb(255, 255, 255); */
   background-position: right; }
 
 .registrateBoton a {
@@ -214,7 +198,7 @@ header {
     background-color: white;
     color: black;
     align-items: center;
-    height: 338px;
+    height: 350px;
     margin-top: 50px;
     text-align: center;
     padding: 6px; }
@@ -323,7 +307,6 @@ header {
 .agregarCarrito {
   background-color: #fdf55f;
   width: 250px;
-  height: 40px;
   font-size: 16px;
   color: black;
   cursor: pointer;
@@ -335,33 +318,6 @@ header {
     color: white;
     border: none; }
 
-/*footer{
-    background-color: map-get($colores, "background-footer" );
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    padding-top: 65px;
-    padding-bottom: 40px;  
-
-    .boxFooter{
-        display: flex; 
-        flex-wrap: wrap;   
-        }
-
-    h4{
-        color: map-get($colores , "footer-letra" );
-        font-size: map-get($font-size , "footer-h4" );
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        padding: 15px;
-    }
-        a{
-            color: map-get($colores , "footer-letra" );
-            font-size: 18px;
-        }
-}*/
 .whatsapp {
   width: 60px;
   height: 60px;
@@ -438,33 +394,6 @@ footer {
   color: #24262b;
   background-color: #ffffff; }
 
-.proximosIngresosSectionGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(23rem, 4fr));
-  grid-template-rows: 18rem;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  padding-bottom: 120px; }
-
-.proximosIngresosSectionGrid img:hover {
-  transform: scale(1.7);
-  transition: transform 1s; }
-
-.proximosIngresosSectionGrid article:hover {
-  background-color: hotpink; }
-
-.proximosIngresosSectionGrid div {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; }
-
-.proximosIngresosSectionGrid div article {
-  text-align: center; }
-
-.proximosIngresosSectionGrid article img {
-  width: 250px;
-  height: 250px; }
-
 .proximosIngresosGrid {
   font-family: 'Chau Philomene One', sans-serif;
   font-size: 35px;
@@ -478,9 +407,20 @@ footer {
   .proximosIngresosGrid:hover {
     background-image: linear-gradient(to right, rgba(255, 105, 180, 0.504), pink, rgba(244, 250, 137, 0.742), pink); }
 
-.proximosIngresosSectionGrid article {
+.agregarCarrito2 {
+  background-color: #fdf55f;
   width: 250px;
-  background-color: #e97ebe; }
+  height: 40px;
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 8px; }
+  .agregarCarrito2:hover {
+    transition: 0.3s;
+    background-color: #897504;
+    color: white;
+    border: none; }
 
 /*BOOTSTRAP*/
 .card {
@@ -499,20 +439,8 @@ footer {
   display: flex;
   justify-content: center; }
 
-.agregarCarrito2 {
-  background-color: #fdf55f;
-  width: 250px;
-  height: 40px;
-  font-size: 16px;
-  color: black;
-  cursor: pointer;
-  padding: 12px;
-  border-radius: 8px; }
-  .agregarCarrito2:hover {
-    transition: 0.3s;
-    background-color: #897504;
-    color: white;
-    border: none; }
+.row {
+  width: 100%; }
 
 .h2catalogo {
   text-align: center;
@@ -537,13 +465,15 @@ footer {
   text-align: center;
   font-size: 24px;
   color: #c135a3;
-  letter-spacing: 6px; }
+  letter-spacing: 6px;
+  cursor: pointer; }
 
 .h4videojuegos {
   text-align: center;
   font-size: 24px;
   color: #c135a3;
-  letter-spacing: 6px; }
+  letter-spacing: 6px;
+  cursor: pointer; }
 
 .ulAnime {
   display: flex;
@@ -556,14 +486,16 @@ footer {
   text-align: center;
   font-size: 24px;
   color: #c135a3;
-  letter-spacing: 6px; }
+  letter-spacing: 6px;
+  cursor: pointer; }
 
 .h4peliculas {
   display: flex;
   justify-content: center;
   font-size: 24px;
   color: #c135a3;
-  letter-spacing: 6px; }
+  letter-spacing: 6px;
+  cursor: pointer; }
 
 .list-group-item {
   border: none;
@@ -583,91 +515,10 @@ footer {
   margin-right: 90px;
   margin-bottom: 100px; }
 
-.list-group-item:hover {
-  background-color: #f45bd8;
-  transform: scale(1);
-  transition: 1s; }
-
-/*HOVER*/
-.thumb span {
-  position: absolute;
-  visibility: hidden; }
-
-.thumb:hover, .thumb:hover span {
-  visibility: visible;
-  top: 0;
-  left: 100px;
-  z-index: 1; }
-
-.hoverimg {
-  width: 100px;
-  height: 100px; }
-
-.boxMainGrid {
-  display: grid;
-  grid-template-columns: 22rem;
-  grid-auto-rows: repeat(auto-fill, minmax(15rem, 1fr));
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  justify-content: center;
-  align-items: center; }
-
-.quienesSomos2Grid {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
-  padding-top: 2%;
-  padding-bottom: 8%;
-  margin-top: 3%; }
-
-.quienesSomos2Grid h2 {
-  font-family: 'Chau Philomene One', sans-serif;
-  font-size: 40px;
-  text-align: center;
-  margin-top: 100px;
-  letter-spacing: 7px;
-  color: #ff3fd6;
-  padding-bottom: 18px; }
-
-.quienesSomos2Grid p {
-  color: black;
-  text-align: center;
-  font-size: 20px;
-  margin: 2px auto; }
-
-.porqueElegirnosGrid h2 {
-  font-family: 'Chau Philomene One', sans-serif;
-  font-size: 40px;
-  text-align: center;
-  margin-top: 100px;
-  letter-spacing: 7px;
-  color: #ff3fd6;
-  padding-bottom: 18px; }
-
-.porqueElegirnosGrid p {
-  color: black;
-  text-align: center;
-  font-size: 20px;
-  margin: 2px auto; }
-
 .dondeEncontrarnosGrid {
   display: flex;
   align-items: center;
   flex-direction: column; }
-
-.dondeEncontrarnosGrid h2 {
-  font-family: 'Chau Philomene One', sans-serif;
-  font-size: 40px;
-  text-align: center;
-  margin-top: 100px;
-  letter-spacing: 7px;
-  color: #ff3fd6; }
-
-.dondeEncontrarnosGrid p {
-  color: black;
-  text-align: center;
-  font-size: 20px; }
 
 .mapaGrid {
   display: flex;
@@ -678,17 +529,6 @@ footer {
   .mapaGrid:hover {
     transition: 0.3s;
     box-shadow: 3px 1px 8px 1px rgba(171, 119, 171, 0.95); }
-
-.carousel {
-  width: 600px;
-  height: 400px;
-  justify-content: center;
-  flex-direction: column;
-  margin-left: 300px; }
-
-.carousel.pointer-event {
-  justify-content: center;
-  flex-direction: column; }
 
 .mainNosotros {
   display: flex;
@@ -807,7 +647,6 @@ footer {
     text-align: center;
     font-size: 21px; }
 
-/* ingresa bootstrap */
 .mb-3 {
   width: 330px; }
 
@@ -926,7 +765,7 @@ footer {
     width: 260px; }
   .stitch img {
     width: 120px;
-    height: 135px; }
+    height: 150px; }
   .box__quienes {
     height: 200px;
     width: 500px; }
@@ -1114,7 +953,8 @@ footer {
     grid-template-columns: 180px 180px;
     grid-template-rows: 200px 200px;
     margin: 0px 0px 0px;
-    justify-content: center; }
+    justify-content: center;
+    margin-bottom: 20px; }
   .ultimos__ingresos h2 {
     margin-top: 50px; }
   .horarios {
@@ -1200,7 +1040,8 @@ footer {
     grid-template-columns: 150px 150px;
     grid-template-rows: 180px 180px;
     margin: 0px 0px 0px;
-    justify-content: center; } }
+    justify-content: center;
+    margin-bottom: 20px; } }
 
 @media (max-width: 340px) {
   .grid__container article {
@@ -1212,8 +1053,7 @@ footer {
   .grid__container p {
     font-size: 10px; }
   .agregarCarrito {
-    width: 100px;
-    font-size: 11px; }
+    width: 100px; }
   .ingresos__vendidos__ofertas h4 {
     padding: 7px; }
   .grid__container {
@@ -1221,7 +1061,8 @@ footer {
     grid-template-columns: 130px 130px;
     grid-template-rows: 170px 170px;
     margin: 0px 0px 0px;
-    justify-content: center; }
+    justify-content: center;
+    margin-bottom: 20px; }
   .box__quienes {
     width: 290px;
     height: 230px; } }
@@ -1249,3 +1090,24 @@ footer {
 @media (max-width: 574px) {
   .footer-col {
     width: 100%; } }
+
+@media (max-width: 370px) {
+  .ultimos__ingresos__figuras article {
+    height: 250px;
+    width: 200px; }
+  .ultimos__ingresos__figuras article img {
+    height: 150px;
+    width: 150px;
+    margin-top: 20px; }
+  .agregarCarrito {
+    margin-bottom: 18px;
+    font-size: 11px; }
+  .ofertas__semana__figuras article {
+    height: 250px;
+    width: 200px;
+    margin-bottom: 0px; }
+  .ofertas__semana__figuras article img {
+    height: 150px;
+    width: 150px; }
+  .descuento {
+    font-size: 12px; } }

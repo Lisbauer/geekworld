@@ -112,7 +112,7 @@
     }
     .stitch img{
        width: 120px;
-       height: 135px;
+       height: 150px;
     }
     .box__quienes{
         height: 200px;
@@ -366,6 +366,7 @@
         grid-template-rows: 200px 200px;
         margin: 0px 0px 0px;
         justify-content: center;
+        margin-bottom: 20px;
     }
     .ultimos__ingresos h2{
         margin-top: 50px;
@@ -484,6 +485,7 @@
             grid-template-rows: 180px 180px;
             margin: 0px 0px 0px;
             justify-content: center;
+            margin-bottom: 20px;
         }
     }
     @media (max-width: 340px) {
@@ -500,7 +502,6 @@
         }
         .agregarCarrito{
             width: 100px;
-            font-size: 11px;
         }
         .ingresos__vendidos__ofertas h4{
             padding: 7px;
@@ -511,6 +512,7 @@
             grid-template-rows: 170px 170px;
             margin: 0px 0px 0px;
             justify-content: center;
+            margin-bottom: 20px;
         }
         .box__quienes{
             width: 290px;
@@ -550,5 +552,34 @@
     .footer-col{
       width: 100%;
   }
+  }
+
+  
+  @media(max-width: 370px){
+    .ultimos__ingresos__figuras article{
+        height: 250px;
+        width: 200px;
+    }
+    .ultimos__ingresos__figuras article img{
+        height: 150px;
+        width: 150px;
+        margin-top: 20px;
+    }
+    .agregarCarrito{
+        margin-bottom: 18px;
+        font-size: 11px;
+    }
+    .ofertas__semana__figuras article{
+        height: 250px;
+        width: 200px;
+        margin-bottom: 0px;
+    }
+    .ofertas__semana__figuras article img{
+        height: 150px;
+        width: 150px;
+    }
+    .descuento{
+        font-size: 12px;
+    }
   }
   
