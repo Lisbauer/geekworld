@@ -2,7 +2,7 @@
     font-family: 'Chau Philomene One', sans-serif;
     font-size: 35px;
     text-align: center;
-    cursor: pointer;
+    cursor: default;
     letter-spacing: 5px;
     color: rgb(255, 63, 214);
     margin-top: 100px;
@@ -41,6 +41,9 @@
         }
         &-body h5{
         font-size: 14px;
+        }
+        &-body a{
+            text-decoration: none;
         }
 }
 .col{

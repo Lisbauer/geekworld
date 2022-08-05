@@ -25,7 +25,7 @@
     text-align: center;
     margin-top: 80px;
     font-size: 45px;
-    cursor: pointer;
+    cursor: default;
     color: rgb(255, 63, 214);
     font-family: "Chau Philomene One";
     letter-spacing: 10px;
@@ -42,7 +42,7 @@
         height: 300px;
         @include flex (column, center, 0 auto, 45%, map-get($colores , "background-quienes-somos" ));
         border: 3px solid yellow;
-        cursor:pointer;
+        cursor:default;
         margin-top: 60px;
         &:hover{
             transition: 1.1s all;
@@ -58,7 +58,7 @@
     text-align: center;
     margin-top: 100px;
     margin-bottom: 80px;
-    cursor: pointer;
+    cursor: default;
     font-size: 35px;
     color: rgb(255, 63, 214);
     font-family: "Chau Philomene One";
@@ -95,7 +95,7 @@
     text-align: center;
     margin-top: 100px;
     margin-bottom: 70px;
-    cursor: pointer;
+    cursor: default;
     font-size: 35px;
     color: rgb(255, 63, 214);
     font-family: "Chau Philomene One";
@@ -108,7 +108,7 @@
 .contacto__h2{
     text-align: center;
     margin-top: 130px;
-    cursor: pointer;
+    cursor: default;
     font-size: 35px;
     color: rgb(255, 63, 214);
     font-family: "Chau Philomene One";

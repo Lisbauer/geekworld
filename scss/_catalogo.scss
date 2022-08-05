@@ -2,7 +2,7 @@
     text-align: center;
     margin-top: 140px;
     font-size: 65px;
-    cursor: pointer;
+    cursor: default;
     color: rgb(255, 63, 214);
     font-family: "Chau Philomene One";
     letter-spacing: 10px;
@@ -23,14 +23,14 @@
     font-size: 24px;
     color: #c135a3;
     letter-spacing: 6px;
-    cursor: pointer;
+    cursor: default;
 }
 .h4videojuegos{
     text-align: center;
     font-size: 24px;
     color: #c135a3;
     letter-spacing: 6px;
-    cursor: pointer;
+    cursor: default;
 }
 .ulAnime{
     display: flex;
@@ -44,7 +44,7 @@
     font-size: 24px;
     color: #c135a3;
     letter-spacing: 6px;
-    cursor: pointer;
+    cursor: default;
 }
 .h4peliculas{
     display: flex;
@@ -52,7 +52,7 @@
     font-size: 24px;
     color: #c135a3;
     letter-spacing: 6px;
-    cursor: pointer;
+    cursor: default;
 }
 .list-group-item{
     &:hover{
