@@ -2,12 +2,11 @@
 .ultimos__ingresos__figuras article img, .ofertas__semana__figuras article img, .grid__container img {
   width: 250px;
   height: 250px;
-  cursor: pointer; }
+  cursor: default; }
 
 /* tipografias
 font-family: 'Montserrat', sans-serif;
 font-family: 'Chau Philomene One', sans-serif;*/
-/* Selector de etiqueta*/
 body {
   font-family: 'Montserrat', sans-serif;
   background-image: linear-gradient(to top right, #df92c5, #f6a4e5); }
@@ -31,7 +30,6 @@ header {
     margin-top: 130px;
     width: 150px;
     padding: 1px 10px;
-    /*background-color: map-get($colores, "navbar-li");*/
     background-image: linear-gradient(to left, #f7bee5, #f993d7, #f7bee5);
     transition: 0.6s;
     background-size: 200%;
@@ -40,9 +38,6 @@ header {
     margin-right: 15px;
     border-radius: 6px; }
     .navbar-nav li:hover {
-      /*transition: 0.3s;
-            box-shadow: inset 6px 6px 40px 6px map-get($colores , "navbar-li-hover" );
-            color: rgb(255, 255, 255);*/
       background-position: right; }
     .navbar-nav li a:hover {
       color: white !important; }
@@ -718,7 +713,6 @@ footer {
         text-decoration: none;
         color: white; }
 
-/* MEDIA QUERY */
 @media (max-width: 1240px) {
   .ingresa-registrate-carrito {
     display: flex;
@@ -882,13 +876,10 @@ footer {
   .ingresaBoton {
     background-color: rgba(250, 128, 114, 0);
     width: 90px; }
-  .ingresaBoton a {
-    /*background-color: rgb(249, 203, 236);*/ }
   .registrateBoton {
     background-color: rgba(250, 128, 114, 0);
     width: 100px; }
   .registrateBoton a {
-    /*background-color: rgb(249, 203, 236);*/
     margin-left: 0px; }
   .carrito img {
     width: 40px;
@@ -969,9 +960,9 @@ footer {
     padding: 4px; }
   .registrateBoton {
     width: 100px;
-    height: 30px;
+    height: 31px;
     font-size: 13px;
-    padding: 4px; }
+    padding: 5px; }
   .carrito img {
     height: 35px;
     width: 35px; }
@@ -1133,6 +1124,7 @@ footer {
   .footer-col {
     width: 100%; } }
 
+/*GALERIA*/
 @media (max-width: 370px) {
   .ultimos__ingresos__figuras article {
     height: 250px;

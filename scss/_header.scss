@@ -15,7 +15,6 @@ header{
         margin-top: 130px;
         width: 150px;
         padding: 1px 10px ;
-        /*background-color: map-get($colores, "navbar-li");*/ 
         background-image: linear-gradient(to left, #f7bee5, rgb(249, 147, 215),#f7bee5);
         transition: 0.6s;
         background-size: 200%;
@@ -24,9 +23,6 @@ header{
         margin-right: 15px;
         border-radius: 6px;
         &:hover{
-            /*transition: 0.3s;
-            box-shadow: inset 6px 6px 40px 6px map-get($colores , "navbar-li-hover" );
-            color: rgb(255, 255, 255);*/
             background-position: right;
         }
         & a:hover{
