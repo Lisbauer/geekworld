@@ -40,12 +40,12 @@
         display: flex;
         justify-content: center;
         position: relative;
-    }
-    .navbar-nav{
+        &-nav{
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
         margin: 20px;
+    } 
     }
     .collapse navbar-collapse{
         width: 10%;
@@ -116,12 +116,12 @@
     .box__quienes{
         height: 200px;
         width: 500px;
-    }
-    .box__quienes p{
+            & p{
         font-size: 15px;
     }
-    .box__quienes h2{
+            & h2{
         font-size: 25px;
+    }
     }
     .proximosIngresosGrid{
         font-size: 28px;
@@ -182,11 +182,11 @@
         grid-template-columns: 280px;
     }
     .boxCategorias2Grid{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 450px 230px 300px;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 450px 230px 300px;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
     }
     .ingresa-registrate-carrito{
         margin-right: 70px;
@@ -194,12 +194,12 @@
     .box__quienes{
         height: 230px;
         width: 350px;
-    }
-    .box__quienes h2{
+        & h2{
         font-size: 23px;
-    }
-    .box__quienes p{
+        }
+        & p{
         font-size: 14px;
+        }
     }
     .form-control me-2{
         width: 60px;
@@ -216,9 +216,9 @@
     .registrateBoton{
         background-color: rgba(250, 128, 114, 0);
         width: 100px;
-    }
-    .registrateBoton a{
+        & a{
         margin-left: 0px;
+        }
     }
     .carrito img{
         width: 40px;
@@ -226,31 +226,25 @@
         margin-left: 10px;
         margin-top: 5px;
     }
-    .d-flex input{
-        width: 160px;
-        height: 35px;
-        font-size: 12px;
-    }
-    .d-flex button{
-        width: 60px;
-        font-size: 12px;
-        height: 35px;
-    }
     .d-flex{
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         margin-left: 10px;
+        & input{
+        width: 160px;
+        height: 35px;
+        font-size: 12px;
+        }
+        & button{
+        width: 60px;
+        font-size: 12px;
+        height: 35px;
+        }
     }
     .navbar{
         display: flex;
         justify-content: flex-start;
-    }
-    .list-group-section{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
     .list-group-item{
         display: flex;
@@ -260,9 +254,12 @@
     }
     .list-group{
         align-items: center;
-    }
-    .list-group-section h4{
+        &-section{
+        @include flex3 (flex, column, center);
+        align-items: center;
+        & h4{
         margin-top: 30px;
+    } 
     }
     .numero__horario__contacto{
         font-size: 17px;
@@ -276,11 +273,11 @@
     .geekworld__d{
         width: 400px;
         height: 350px;
-    }
-    .geekworld__d__p{
+        &__p{
         font-size: 12px;
+        } 
     }
-}
+}}
 @media (max-width: 360px) {
     .box__quienes{
         width: 270px;
@@ -338,17 +335,6 @@
     .d-flex button{
         height: 30px;
     }
-    .grid__container article{
-        height: 200px;
-        width: 180px;
-    }
-    .grid__container img{
-        height: 110px;
-        width: 110px;
-    }
-    .grid__container p{
-        font-size: 12px;
-    }
     .agregarCarrito{
         width: 150px;
         font-size: 11px;
@@ -360,6 +346,17 @@
         margin: 0px 0px 0px;
         justify-content: center;
         margin-bottom: 20px;
+        & p{
+        font-size: 12px;
+        }
+        & img{
+        height: 110px;
+        width: 110px;
+        } 
+        & article{
+        height: 200px;
+        width: 180px;
+        } 
     }
     .ultimos__ingresos h2{
         margin-top: 50px;
@@ -457,55 +454,55 @@
     }
  }
     @media (max-width: 375px) {
-        .grid__container article{
+        .grid__container{
+        display: grid;
+        grid-template-columns: 150px 150px;
+        grid-template-rows: 180px 180px;
+        margin: 0px 0px 0px;
+        justify-content: center;
+        margin-bottom: 20px;
+            & article{
             height: 190px;
             width: 160px;
         }
-        .grid__container img{
+            & img{
             height: 100px;
             width: 100px;
         }
-        .grid__container p{
+            & p{
             font-size: 12px;
+        }
         }
         .agregarCarrito{
             width: 130px;
             font-size: 11px;
         }
-        .grid__container{
-            display: grid;
-            grid-template-columns: 150px 150px;
-            grid-template-rows: 180px 180px;
-            margin: 0px 0px 0px;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
     }
     @media (max-width: 340px) {
-        .grid__container article{
-            height: 175px;
-            width: 140px;
-        }
-        .grid__container img{
+         .grid__container{
+        display: grid;
+        grid-template-columns: 130px 130px;
+        grid-template-rows: 170px 170px;
+        margin: 0px 0px 0px;
+        justify-content: center;
+        margin-bottom: 20px;
+            & article{
+                height: 175px;
+                width: 140px;
+            }
+            & img{
             height: 85px;
             width: 85px;
         }
-        .grid__container p{
+            & p{
             font-size: 10px;
+        }
         }
         .agregarCarrito{
             width: 100px;
         }
         .ingresos__vendidos__ofertas h4{
             padding: 7px;
-        }
-        .grid__container{
-            display: grid;
-            grid-template-columns: 130px 130px;
-            grid-template-rows: 170px 170px;
-            margin: 0px 0px 0px;
-            justify-content: center;
-            margin-bottom: 20px;
         }
         .box__quienes{
             width: 290px;
@@ -522,17 +519,16 @@
     .navbar-toggler{
         width: 60px;
     }
-    .box__quienes h2{
-        margin-bottom: 20px;
-    }
-    .box__quienes p{
-        margin-bottom: 50px;
-    }
     .box__quienes{
         height: 340px;
+        & h2{
+        margin-bottom: 20px;
+        }
+        & p{
+        margin-bottom: 50px;
+    }
     }
 }
-/* FOOTER*/
 @media(max-width: 767px){
     .footer-col{
       width: 50%;
@@ -544,17 +540,16 @@
       width: 100%;
   }
   }
-
-/*GALERIA*/
+  
   @media(max-width: 370px){
     .ultimos__ingresos__figuras article{
         height: 250px;
         width: 200px;
-    }
-    .ultimos__ingresos__figuras article img{
+        & img{
         height: 150px;
         width: 150px;
         margin-top: 20px;
+        }
     }
     .agregarCarrito{
         margin-bottom: 18px;
@@ -564,10 +559,10 @@
         height: 250px;
         width: 200px;
         margin-bottom: 0px;
-    }
-    .ofertas__semana__figuras article img{
+        & img{
         height: 150px;
         width: 150px;
+        }
     }
     .descuento{
         font-size: 12px;

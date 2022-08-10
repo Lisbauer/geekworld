@@ -15,6 +15,7 @@ li {
   list-style: none; }
 
 header {
+  position: sticky;
   top: 0%;
   background-size: cover;
   background-position: center;
@@ -41,21 +42,16 @@ header {
       background-position: right; }
     .navbar-nav li a:hover {
       color: white !important; }
-
-.navbar-brand img {
-  width: 18%;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  top: -14%;
-  left: 40%;
-  width: 14%; }
-
-.navbar-light .navbar-nav .nav-link {
-  color: #c135a3; }
-
-.ingresa-registrate-carrito {
-  display: flex; }
+  .navbar-brand img {
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -14%;
+    left: 40%;
+    width: 14%; }
+  .navbar-light .navbar-nav .nav-link {
+    color: #c135a3; }
 
 .d-flex {
   height: 40px;
@@ -64,17 +60,14 @@ header {
   .d-flex:hover {
     transition: 0.3s;
     box-shadow: 3px 1px 8px 1px rgba(63, 42, 63, 0.475); }
-
-.d-flex-barra {
-  transition: 2s;
-  width: 450px; }
-
-.d-flex button {
-  background-color: white; }
-
-.d-flex button:hover {
-  transition: 0.4s;
-  background-color: #f9cbec; }
+  .d-flex-barra {
+    transition: 2s;
+    width: 450px; }
+  .d-flex button {
+    background-color: white; }
+    .d-flex button:hover {
+      transition: 0.4s;
+      background-color: #f9cbec; }
 
 .ingresaRegistrate {
   display: flex;
@@ -91,16 +84,13 @@ header {
   background-size: 200%;
   width: 120px;
   text-align: center; }
-
-.ingresaBoton:hover {
-  background-position: right; }
-
-.ingresaBoton a {
-  text-decoration: none;
-  color: #c135a3; }
-
-.ingresaBoton a:hover {
-  color: white; }
+  .ingresaBoton:hover {
+    background-position: right; }
+  .ingresaBoton a {
+    text-decoration: none;
+    color: #c135a3; }
+    .ingresaBoton a:hover {
+      color: white; }
 
 .registrateBoton {
   padding: 12px;
@@ -111,16 +101,13 @@ header {
   background-size: 200%;
   width: 120px;
   text-align: center; }
-
-.registrateBoton:hover {
-  background-position: right; }
-
-.registrateBoton a {
-  text-decoration: none;
-  color: #c135a3; }
-
-.registrateBoton a:hover {
-  color: white; }
+  .registrateBoton:hover {
+    background-position: right; }
+  .registrateBoton a {
+    text-decoration: none;
+    color: #c135a3; }
+    .registrateBoton a:hover {
+      color: white; }
 
 .carrito img {
   display: flex;
@@ -130,6 +117,7 @@ header {
   z-index: 998; }
 
 .ingresa-registrate-carrito {
+  display: flex;
   margin-top: 140px;
   margin-right: 15px; }
 
@@ -224,8 +212,8 @@ header {
 .renuevan {
   display: flex;
   justify-content: center;
-  color: #ff3fd6;
-  font-size: 12px; }
+  color: #eaff07;
+  font-size: 15px; }
 
 .ofertas__semana__figuras {
   display: flex;
@@ -239,9 +227,9 @@ header {
     background-color: white;
     color: black;
     align-items: center;
+    margin-top: 60px;
     margin-bottom: 70px;
     height: 380px;
-    margin-top: 60px;
     padding: 8px;
     text-align: center; }
     .ofertas__semana__figuras article:hover {
@@ -276,11 +264,11 @@ header {
   margin-top: 50px; }
   .grid__container article {
     text-align: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    background-color: #ffe0f7; }
+    background-color: white; }
     .grid__container article:hover {
       transition: 0.3s;
       box-shadow: 3px 1px 8px 1px rgba(171, 119, 171, 0.95); }
@@ -302,7 +290,7 @@ header {
   background-color: #fdf55f;
   width: 250px;
   font-size: 16px;
-  color: black;
+  color: #080505;
   cursor: pointer;
   padding: 12px;
   border-radius: 8px; }
@@ -322,7 +310,6 @@ header {
   right: 15px;
   bottom: 15px; }
 
-/* BOOTSTRAP*/
 .container {
   max-width: 1170px;
   margin: auto; }
@@ -341,55 +328,48 @@ footer {
 .footer-col {
   width: 25%;
   padding: 0 15px; }
-
-.footer-col h4 {
-  font-size: 18px;
-  color: #ffffff;
-  margin-bottom: 35px;
-  font-weight: 500;
-  position: relative; }
-
-.footer-col h4::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  background-color: #e91e63;
-  height: 2px;
-  box-sizing: border-box;
-  width: 50px; }
-
-.footer-col ul li:not(:last-child) {
-  margin-bottom: 10px; }
-
-.footer-col ul li a {
-  font-size: 16px;
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 300;
-  color: #bbbbbb;
-  display: block;
-  transition: all 0.3s ease; }
-
-.footer-col ul li a:hover {
-  color: #ffffff;
-  padding-left: 8px; }
-
-.footer-col .social-links a {
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  background-color: rgba(255, 255, 255, 0.2);
-  margin: 0 10px 10px 0;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  color: #ffffff;
-  transition: all 0.5s ease; }
-
-.footer-col .social-links a:hover {
-  color: #24262b;
-  background-color: #ffffff; }
+  .footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative; }
+    .footer-col h4::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      background-color: #e91e63;
+      height: 2px;
+      box-sizing: border-box;
+      width: 50px; }
+  .footer-col ul li:not(:last-child) {
+    margin-bottom: 10px; }
+  .footer-col ul li a {
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease; }
+    .footer-col ul li a:hover {
+      color: #ffffff;
+      padding-left: 8px; }
+  .footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease; }
+    .footer-col .social-links a:hover {
+      color: #24262b;
+      background-color: #ffffff; }
 
 .proximosIngresosGrid {
   font-family: 'Chau Philomene One', sans-serif;
@@ -399,8 +379,8 @@ footer {
   letter-spacing: 5px;
   color: #ff3fd6;
   margin-top: 100px;
-  background-color: rgba(247, 190, 229, 0.563);
-  margin-bottom: 80px; }
+  margin-bottom: 80px;
+  background-color: #f7bee5; }
   .proximosIngresosGrid:hover {
     background-image: linear-gradient(to right, rgba(255, 105, 180, 0.504), pink, rgba(244, 250, 137, 0.742), pink); }
 
@@ -409,7 +389,7 @@ footer {
   width: 250px;
   height: 40px;
   font-size: 16px;
-  color: black;
+  color: #080505;
   cursor: pointer;
   padding: 12px;
   border-radius: 8px; }
@@ -419,7 +399,6 @@ footer {
     color: white;
     border: none; }
 
-/*BOOTSTRAP*/
 .card {
   width: 280px;
   background-color: #ffe0f7;
@@ -443,13 +422,13 @@ footer {
 
 .h2catalogo {
   text-align: center;
-  margin-top: 140px;
   font-size: 65px;
   cursor: default;
   color: #ff3fd6;
   font-family: "Chau Philomene One";
   letter-spacing: 10px;
-  background-color: rgba(247, 190, 229, 0.563); }
+  background-color: #f7bee5;
+  margin-top: 140px; }
   .h2catalogo:hover {
     background-image: linear-gradient(to right, rgba(255, 105, 180, 0.504), pink, rgba(244, 250, 137, 0.742), pink); }
 
@@ -457,8 +436,9 @@ footer {
   text-align: center;
   font-size: 20px;
   color: #fde800;
-  padding-bottom: 50px;
-  letter-spacing: 5px; }
+  letter-spacing: 5px;
+  cursor: default;
+  padding-bottom: 50px; }
 
 .h4anime {
   text-align: center;
@@ -481,7 +461,6 @@ footer {
   text-align: center; }
 
 .h4series {
-  justify-content: center;
   text-align: center;
   font-size: 24px;
   color: #c135a3;
@@ -491,6 +470,7 @@ footer {
 .h4peliculas {
   display: flex;
   justify-content: center;
+  text-align: center;
   font-size: 24px;
   color: #c135a3;
   letter-spacing: 6px;
@@ -509,20 +489,22 @@ footer {
 
 .list-group-section {
   display: flex;
-  justify-content: space-evenly;
   flex-direction: row;
+  justify-content: space-evenly;
   margin-right: 90px;
   margin-bottom: 100px; }
 
 .dondeEncontrarnosGrid {
   display: flex;
-  align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .mapaGrid {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 400px;
   height: 400px; }
   .mapaGrid:hover {
@@ -531,19 +513,18 @@ footer {
 
 .mainNosotros {
   display: flex;
-  justify-content: center;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center; }
 
-/* NEW */
 .nosotros__h1 {
   text-align: center;
-  margin-top: 80px;
   font-size: 45px;
   cursor: default;
   color: #ff3fd6;
   font-family: "Chau Philomene One";
   letter-spacing: 10px;
-  background-color: rgba(247, 190, 229, 0.563); }
+  background-color: rgba(247, 190, 229, 0.563);
+  margin-top: 80px; }
   .nosotros__h1:hover {
     background-image: linear-gradient(to right, rgba(255, 105, 180, 0.504), pink, rgba(244, 250, 137, 0.742), pink); }
 
@@ -567,73 +548,71 @@ footer {
       transform: translateX(0px);
       box-shadow: 30px 30px 60px hotpink, 30px -30px 60px yellow, -30px -30px 60px lightblue, -30px 30px 60px purple; }
     .geekworld__d__p {
-      text-align: center; }
+      text-align: center;
+      color: black; }
 
 .seguinos {
   text-align: center;
-  margin-top: 100px;
-  margin-bottom: 80px;
-  cursor: default;
   font-size: 35px;
+  cursor: default;
   color: #ff3fd6;
   font-family: "Chau Philomene One";
   letter-spacing: 10px;
-  background-color: rgba(247, 190, 229, 0.563); }
+  background-color: rgba(247, 190, 229, 0.563);
+  margin-top: 100px;
+  margin-bottom: 80px; }
   .seguinos:hover {
     background-image: linear-gradient(to right, rgba(255, 105, 180, 0.504), pink, rgba(244, 250, 137, 0.742), pink); }
 
 .social-links-2 {
   display: flex;
   justify-content: center; }
-
-.social-links-2 a {
-  display: inline-block;
-  height: 80px;
-  width: 80px;
-  background-color: rgba(255, 255, 255, 0.2);
-  margin: 0 10px 10px 0;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  color: #ffffff;
-  transition: all 0.5s ease; }
-
-.social-links-2 a:hover {
-  color: #24262b;
-  background-color: #ffffff; }
-
-.social-links-2 i {
-  margin-top: 15px; }
+  .social-links-2 a {
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease; }
+    .social-links-2 a:hover {
+      color: #24262b;
+      background-color: #ffffff; }
+  .social-links-2 i {
+    margin-top: 15px; }
 
 .donde__estamos {
   text-align: center;
-  margin-top: 100px;
-  margin-bottom: 70px;
-  cursor: default;
   font-size: 35px;
+  cursor: default;
   color: #ff3fd6;
   font-family: "Chau Philomene One";
   letter-spacing: 10px;
-  background-color: rgba(247, 190, 229, 0.563); }
+  background-color: rgba(247, 190, 229, 0.563);
+  margin-top: 100px;
+  margin-bottom: 70px; }
   .donde__estamos:hover {
     background-image: linear-gradient(to right, rgba(255, 105, 180, 0.504), pink, rgba(244, 250, 137, 0.742), pink); }
 
 .contacto__h2 {
   text-align: center;
-  margin-top: 130px;
-  cursor: default;
   font-size: 35px;
+  cursor: default;
   color: #ff3fd6;
   font-family: "Chau Philomene One";
   letter-spacing: 10px;
-  background-color: rgba(247, 190, 229, 0.563); }
+  background-color: rgba(247, 190, 229, 0.563);
+  margin-top: 130px; }
   .contacto__h2:hover {
     background-image: linear-gradient(to right, rgba(255, 105, 180, 0.504), pink, rgba(244, 250, 137, 0.742), pink); }
 
 .numero__horario {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   margin-top: 20px;
   margin-bottom: 90px; }
   .numero__horario__contacto {
@@ -651,10 +630,10 @@ footer {
 
 .mb-form {
   margin-top: 60px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #fab4e4;
   width: 400px;
   padding: 40px;
@@ -674,44 +653,6 @@ footer {
 .stitch__caja {
   display: flex;
   justify-content: center; }
-
-.error__main {
-  display: flex;
-  justify-content: center; }
-
-.error {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .error .error__page {
-    font-family: "Chau Philomene One";
-    font-size: 70px;
-    text-align: center;
-    letter-spacing: 5px;
-    color: #ff3fd6;
-    margin-top: 100px;
-    background-color: rgba(247, 190, 229, 0.563);
-    margin-top: 150px; }
-    .error .error__page:hover {
-      background-image: linear-gradient(to right, rgba(255, 105, 180, 0.504), pink, rgba(244, 250, 137, 0.742), pink); }
-    .error .error__page__boton {
-      font-size: 20px;
-      padding: 15px;
-      border-radius: 6%;
-      margin: 7px;
-      text-decoration: none;
-      background-image: linear-gradient(to left, #f7bee5, #f993d7, #f7bee5);
-      transition: 0.6s;
-      background-size: 200%;
-      width: 300px;
-      text-align: center;
-      margin-bottom: 150px; }
-      .error .error__page__boton:hover {
-        background-position: right;
-        box-shadow: 3px 1px 8px 1px rgba(171, 119, 171, 0.95); }
-      .error .error__page__boton a {
-        text-decoration: none;
-        color: white; }
 
 @media (max-width: 1240px) {
   .ingresa-registrate-carrito {
@@ -747,11 +688,11 @@ footer {
     display: flex;
     justify-content: center;
     position: relative; }
-  .navbar-nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin: 20px; }
+    .navbar-nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      margin: 20px; }
   .collapse navbar-collapse {
     width: 10%; }
   .ingresa-registrate-carrito {
@@ -805,10 +746,10 @@ footer {
   .box__quienes {
     height: 200px;
     width: 500px; }
-  .box__quienes p {
-    font-size: 15px; }
-  .box__quienes h2 {
-    font-size: 25px; }
+    .box__quienes p {
+      font-size: 15px; }
+    .box__quienes h2 {
+      font-size: 25px; }
   .proximosIngresosGrid {
     font-size: 28px; }
   .list-group-section {
@@ -863,10 +804,10 @@ footer {
   .box__quienes {
     height: 230px;
     width: 350px; }
-  .box__quienes h2 {
-    font-size: 23px; }
-  .box__quienes p {
-    font-size: 14px; }
+    .box__quienes h2 {
+      font-size: 23px; }
+    .box__quienes p {
+      font-size: 14px; }
   .form-control me-2 {
     width: 60px;
     height: 20px; }
@@ -879,34 +820,29 @@ footer {
   .registrateBoton {
     background-color: rgba(250, 128, 114, 0);
     width: 100px; }
-  .registrateBoton a {
-    margin-left: 0px; }
+    .registrateBoton a {
+      margin-left: 0px; }
   .carrito img {
     width: 40px;
     height: 45px;
     margin-left: 10px;
     margin-top: 5px; }
-  .d-flex input {
-    width: 160px;
-    height: 35px;
-    font-size: 12px; }
-  .d-flex button {
-    width: 60px;
-    font-size: 12px;
-    height: 35px; }
   .d-flex {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     margin-left: 10px; }
+    .d-flex input {
+      width: 160px;
+      height: 35px;
+      font-size: 12px; }
+    .d-flex button {
+      width: 60px;
+      font-size: 12px;
+      height: 35px; }
   .navbar {
     display: flex;
     justify-content: flex-start; }
-  .list-group-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
   .list-group-item {
     display: flex;
     justify-content: center;
@@ -914,19 +850,24 @@ footer {
     text-align: center; }
   .list-group {
     align-items: center; }
-  .list-group-section h4 {
-    margin-top: 30px; }
-  .numero__horario__contacto {
-    font-size: 17px; }
-  .numero__horario__mail {
-    font-size: 17px; }
-  .numero__horario__cliente {
-    font-size: 17px; }
-  .geekworld__d {
-    width: 400px;
-    height: 350px; }
-  .geekworld__d__p {
-    font-size: 12px; } }
+    .list-group-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .list-group-section h4 {
+        margin-top: 30px; }
+    .list-group .numero__horario__contacto {
+      font-size: 17px; }
+    .list-group .numero__horario__mail {
+      font-size: 17px; }
+    .list-group .numero__horario__cliente {
+      font-size: 17px; }
+    .list-group .geekworld__d {
+      width: 400px;
+      height: 350px; }
+      .list-group .geekworld__d__p {
+        font-size: 12px; } }
 
 @media (max-width: 360px) {
   .box__quienes {
@@ -970,14 +911,6 @@ footer {
     height: 30px; }
   .d-flex button {
     height: 30px; }
-  .grid__container article {
-    height: 200px;
-    width: 180px; }
-  .grid__container img {
-    height: 110px;
-    width: 110px; }
-  .grid__container p {
-    font-size: 12px; }
   .agregarCarrito {
     width: 150px;
     font-size: 11px; }
@@ -988,6 +921,14 @@ footer {
     margin: 0px 0px 0px;
     justify-content: center;
     margin-bottom: 20px; }
+    .grid__container p {
+      font-size: 12px; }
+    .grid__container img {
+      height: 110px;
+      width: 110px; }
+    .grid__container article {
+      height: 200px;
+      width: 180px; }
   .ultimos__ingresos h2 {
     margin-top: 50px; }
   .horarios {
@@ -1057,38 +998,26 @@ footer {
     font-size: 12px; } }
 
 @media (max-width: 375px) {
-  .grid__container article {
-    height: 190px;
-    width: 160px; }
-  .grid__container img {
-    height: 100px;
-    width: 100px; }
-  .grid__container p {
-    font-size: 12px; }
-  .agregarCarrito {
-    width: 130px;
-    font-size: 11px; }
   .grid__container {
     display: grid;
     grid-template-columns: 150px 150px;
     grid-template-rows: 180px 180px;
     margin: 0px 0px 0px;
     justify-content: center;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+    .grid__container article {
+      height: 190px;
+      width: 160px; }
+    .grid__container img {
+      height: 100px;
+      width: 100px; }
+    .grid__container p {
+      font-size: 12px; }
+  .agregarCarrito {
+    width: 130px;
+    font-size: 11px; } }
 
 @media (max-width: 340px) {
-  .grid__container article {
-    height: 175px;
-    width: 140px; }
-  .grid__container img {
-    height: 85px;
-    width: 85px; }
-  .grid__container p {
-    font-size: 10px; }
-  .agregarCarrito {
-    width: 100px; }
-  .ingresos__vendidos__ofertas h4 {
-    padding: 7px; }
   .grid__container {
     display: grid;
     grid-template-columns: 130px 130px;
@@ -1096,6 +1025,18 @@ footer {
     margin: 0px 0px 0px;
     justify-content: center;
     margin-bottom: 20px; }
+    .grid__container article {
+      height: 175px;
+      width: 140px; }
+    .grid__container img {
+      height: 85px;
+      width: 85px; }
+    .grid__container p {
+      font-size: 10px; }
+  .agregarCarrito {
+    width: 100px; }
+  .ingresos__vendidos__ofertas h4 {
+    padding: 7px; }
   .box__quienes {
     width: 290px;
     height: 230px; } }
@@ -1107,14 +1048,13 @@ footer {
     width: 20px; }
   .navbar-toggler {
     width: 60px; }
-  .box__quienes h2 {
-    margin-bottom: 20px; }
-  .box__quienes p {
-    margin-bottom: 50px; }
   .box__quienes {
-    height: 340px; } }
+    height: 340px; }
+    .box__quienes h2 {
+      margin-bottom: 20px; }
+    .box__quienes p {
+      margin-bottom: 50px; } }
 
-/* FOOTER*/
 @media (max-width: 767px) {
   .footer-col {
     width: 50%;
@@ -1124,15 +1064,14 @@ footer {
   .footer-col {
     width: 100%; } }
 
-/*GALERIA*/
 @media (max-width: 370px) {
   .ultimos__ingresos__figuras article {
     height: 250px;
     width: 200px; }
-  .ultimos__ingresos__figuras article img {
-    height: 150px;
-    width: 150px;
-    margin-top: 20px; }
+    .ultimos__ingresos__figuras article img {
+      height: 150px;
+      width: 150px;
+      margin-top: 20px; }
   .agregarCarrito {
     margin-bottom: 18px;
     font-size: 11px; }
@@ -1140,8 +1079,8 @@ footer {
     height: 250px;
     width: 200px;
     margin-bottom: 0px; }
-  .ofertas__semana__figuras article img {
-    height: 150px;
-    width: 150px; }
+    .ofertas__semana__figuras article img {
+      height: 150px;
+      width: 150px; }
   .descuento {
     font-size: 12px; } }

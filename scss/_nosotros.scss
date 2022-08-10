@@ -1,35 +1,23 @@
-
 .dondeEncontrarnosGrid {
-    display: flex;
+    @include flex3 (flex, column, center);
     align-items: center;
-    flex-direction: column;
 }
 .mapaGrid{
-    display: flex;
+    @include flex3 (flex, column, center);
     align-items: center;
-    justify-content: center;
     width: 400px;
     height: 400px;
     &:hover{
         transition: 0.3s;
-        box-shadow: 3px 1px 8px 1px rgba(171,119,171,0.95);
+        box-shadow: 3px 1px 8px 1px map-get($colores, "box-shadow");
     }
 }
 .mainNosotros{
-            display: flex;
-    justify-content: center;
-    flex-direction: column;
+    @include flex3 (flex, column, center);
 }
-/* NEW */
 .nosotros__h1{
-    text-align: center;
+    @include titulos (center, 45px, default,  map-get($colores , "color-titulos"), "Chau Philomene One", 10px, map-get($colores , "background-titulos"));
     margin-top: 80px;
-    font-size: 45px;
-    cursor: default;
-    color: rgb(255, 63, 214);
-    font-family: "Chau Philomene One";
-    letter-spacing: 10px;
-    background-color: rgba(247, 190, 229, 0.563);
     &:hover{
         background-image: linear-gradient(to right, rgba(255, 105, 180, 0.504), pink, rgba(244, 250, 137, 0.742), pink);
     }
@@ -41,7 +29,7 @@
     &__d{
         height: 300px;
         @include flex (column, center, 0 auto, 45%, map-get($colores , "background-quienes-somos" ));
-        border: 3px solid yellow;
+        border: 3px solid map-get($colores, "bordes-textos");
         cursor:default;
         margin-top: 60px;
         &:hover{
@@ -51,19 +39,13 @@
             }   
         &__p{
             text-align: center;
+            color: map-get($colores, "parrafos");
         }
     }
 }
 .seguinos{
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 80px;
-    cursor: default;
-    font-size: 35px;
-    color: rgb(255, 63, 214);
-    font-family: "Chau Philomene One";
-    letter-spacing: 10px;
-    background-color: rgba(247, 190, 229, 0.563);
+    @include titulos (center, 35px, default,  map-get($colores , "color-titulos"), "Chau Philomene One", 10px, map-get($colores , "background-titulos"));
+    @include margin (100px, 80px);
     &:hover{
         background-image: linear-gradient(to right, rgba(255, 105, 180, 0.504), pink, rgba(244, 250, 137, 0.742), pink);
     }
@@ -71,8 +53,7 @@
 .social-links-2{
     display: flex;
     justify-content: center;
-}
-.social-links-2 a{
+    & a{
 	display: inline-block;
 	height: 80px;
 	width: 80px;
@@ -83,47 +64,32 @@
 	border-radius: 50%;
 	color: #ffffff;
 	transition: all 0.5s ease;
-}
-.social-links-2 a:hover{
+    &:hover{
 	color: #24262b;
 	background-color: #ffffff;
-}
-.social-links-2 i{
+    }
+    }
+    & i{
     margin-top: 15px;
 }
+}
 .donde__estamos{
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 70px;
-    cursor: default;
-    font-size: 35px;
-    color: rgb(255, 63, 214);
-    font-family: "Chau Philomene One";
-    letter-spacing: 10px;
-    background-color: rgba(247, 190, 229, 0.563);
+    @include titulos (center, 35px, default, map-get($colores , "color-titulos"), "Chau Philomene One", 10px, map-get($colores , "background-titulos"));
+    @include margin (100px, 70px);
     &:hover{
         background-image: linear-gradient(to right, rgba(255, 105, 180, 0.504), pink, rgba(244, 250, 137, 0.742), pink);
     }
 }
 .contacto__h2{
-    text-align: center;
+    @include titulos (center, 35px, default, map-get($colores , "color-titulos"), "Chau Philomene One", 10px, map-get($colores , "background-titulos"));
     margin-top: 130px;
-    cursor: default;
-    font-size: 35px;
-    color: rgb(255, 63, 214);
-    font-family: "Chau Philomene One";
-    letter-spacing: 10px;
-    background-color: rgba(247, 190, 229, 0.563);
     &:hover{
         background-image: linear-gradient(to right, rgba(255, 105, 180, 0.504), pink, rgba(244, 250, 137, 0.742), pink);
     }
 }
 .numero__horario{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-bottom: 90px;
+    @include flex3 (flex, column, center);
+    @include margin (20px, 90px);
     &__contacto{
         text-align: center;
         font-size: 21px;

@@ -1,4 +1,5 @@
 header{
+    position: sticky;
     top: 0%;
     background-size: cover;
     background-position: center;
@@ -10,12 +11,11 @@ header{
     height: 195px;
     display: flex;
     background-position: top;
-
     &-nav li{
         margin-top: 130px;
         width: 150px;
         padding: 1px 10px ;
-        background-image: linear-gradient(to left, #f7bee5, rgb(249, 147, 215),#f7bee5);
+        background-image: linear-gradient(to left , map-get($colores , "botones-gradientes-nav1"), map-get($colores , "botones-gradientes-nav2"), map-get($colores , "botones-gradientes-nav1"));
         transition: 0.6s;
         background-size: 200%;
         font-size: map-get($font-size, "navbar-li"); 
@@ -29,21 +29,18 @@ header{
             color: white !important;
         }
     }
-}
-.navbar-brand img{
-    width: 18%;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: -14%;
-    left: 40%;
-    width: 14%;
-}
-.navbar-light .navbar-nav .nav-link{
-    color: map-get($colores , "nav-li" )
-}
-.ingresa-registrate-carrito{
-    display: flex;
+    &-brand img{
+        width: 18%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: -14%;
+        left: 40%;
+        width: 14%;
+    }
+    &-light .navbar-nav .nav-link{
+        color: map-get($colores , "nav-li");
+    }
 }
 .d-flex{
     height: 40px;
@@ -53,17 +50,17 @@ header{
         transition: 0.3s;
         box-shadow: 3px 1px 8px 1px rgba(63, 42, 63, 0.475);
     }
-}
-.d-flex-barra{
-    transition: 2s;
-    width: 450px;
-}
-.d-flex button{
-    background-color: white;
-}
-.d-flex button:hover{
-    transition: 0.4s;
-    background-color: rgb(249, 203, 236);
+    &-barra{
+        transition: 2s;
+        width: 450px;
+    }
+    & button{
+        background-color: white;
+        &:hover{
+            transition: 0.4s;
+            background-color: rgb(249, 203, 236);
+        }
+    }
 }
 .ingresaRegistrate{
     display: flex;
@@ -75,41 +72,41 @@ header{
     border-radius: 6%;
     margin: 7px;
     text-decoration: none;
-    background-image: linear-gradient(to left, #f7bee5, rgb(249, 147, 215),#f7bee5);
+    background-image: linear-gradient(to left , map-get($colores , "botones-gradientes-nav1"), map-get($colores , "botones-gradientes-nav2"), map-get($colores , "botones-gradientes-nav1"));
     transition: 0.6s;
     background-size: 200%;
     width: 120px;
     text-align: center;
-}
-.ingresaBoton:hover{
-    background-position: right;
-}
-.ingresaBoton a{
-    text-decoration: none;
-    color: #c135a3;
-}
-.ingresaBoton a:hover{
+    &:hover{
+        background-position: right;
+    }
+    & a{
+        text-decoration: none;
+        color: map-get($colores , "nav-li");
+        &:hover{
     color: white;
+    }
+    }
 }
 .registrateBoton{
     padding: 12px;
     border-radius: 6%;
     margin: 7px;
-    background-image: linear-gradient(to left, #f7bee5, rgb(249, 147, 215),#f7bee5);
+    background-image: linear-gradient(to left , map-get($colores , "botones-gradientes-nav1"), map-get($colores , "botones-gradientes-nav2"), map-get($colores , "botones-gradientes-nav1"));
     transition: 0.6s;
     background-size: 200%;
     width: 120px;
     text-align: center;
-}
-.registrateBoton:hover{
-    background-position: right;
-}
-.registrateBoton a{
-    text-decoration: none;
-    color: #c135a3;
-}
-.registrateBoton a:hover{
-    color: white;
+    &:hover{
+        background-position: right;
+    }
+    & a{
+        text-decoration: none;
+        color: map-get($colores , "nav-li");
+        &:hover{
+            color: white;
+        }
+    }
 }
 .carrito img{
     display: flex;
@@ -119,6 +116,7 @@ header{
     z-index: 998;
 }
 .ingresa-registrate-carrito{
+    display: flex;
     margin-top: 140px;
     margin-right: 15px;
 }

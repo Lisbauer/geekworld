@@ -4,31 +4,29 @@
     text-align: center;
     cursor: default;
     letter-spacing: 5px;
-    color: rgb(255, 63, 214);
-    margin-top: 100px;
-    background-color: rgba(247, 190, 229, 0.563);
-    margin-bottom: 80px;
+    color:  map-get($colores , "color-titulos");
+    @include margin (100px, 80px);
+    background-color: map-get($colores , "background-quienes-somos" );
     &:hover{
         background-image: linear-gradient(to right, rgba(255, 105, 180, 0.504), pink, rgba(244, 250, 137, 0.742), pink);
     }
 }
 .agregarCarrito2{
-    background-color: rgb(253, 245, 95);
+    background-color: map-get($colores, "agregar-carrito");
     width: 250px;
     height: 40px;
     font-size: 16px;
-    color: rgb(0, 0, 0);
+    color: map-get($colores, "letra-agregar-carrito");
     cursor: pointer;
     padding: 12px;
     border-radius: 8px;
         &:hover{
         transition: 0.3s;
-        background-color: rgb(137, 117, 4);
-        color: rgb(255, 255, 255);
+        background-color: map-get($colores, "fondo-agregar-carrito-hover");
+        color: map-get($colores, "letra-agregar-carrito-hover");
         border: none;
         }
 }
-/*BOOTSTRAP*/
 .card{
     width: 280px;
     background-color: rgb(255, 224, 247);
@@ -37,7 +35,7 @@
     align-items: center;
         &:hover{
         transition: 0.3s;
-        box-shadow: 3px 1px 8px 1px rgba(171,119,171,0.95);
+        box-shadow: 3px 1px 8px 1px map-get($colores, "box-shadow");
         }
         &-body h5{
         font-size: 14px;

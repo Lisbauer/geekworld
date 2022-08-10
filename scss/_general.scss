@@ -3,7 +3,7 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Chau Philomene One', sans-serif;*/
 body{
     font-family: 'Montserrat', sans-serif;
-    background-image: linear-gradient(to top right, rgb(223, 146, 197), rgb(246, 164, 229));
+    background-image: map-get($colores, "fondo-general");
 }
 li{
     list-style: none;
