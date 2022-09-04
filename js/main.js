@@ -209,9 +209,6 @@ Daenerys.precioFinal();
 function cargarFiguras(figura){
   figuras.push(figura);
 }
-function eliminarFigura(figura){
-  figuras.pop(figura);
-}
 
 cargarFiguras(Jinx);
 cargarFiguras(Luffy);
