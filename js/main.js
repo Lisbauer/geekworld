@@ -1,4 +1,4 @@
-alert ("Bienvenido a Geekworld, registrese para continuar");
+/*alert ("Bienvenido a Geekworld, registrese para continuar");
 
 function registrarse(){
     let usuario = prompt("Ingrese su usuario");
@@ -176,3 +176,48 @@ if (carritoFinalizado) {
   let envio = prompt("Indique su direccion para el envio");
   alert("Su envio ha sido programado para mañana en el horario de 9 am a 2 pm a la direccion de " + envio);
   }
+*/
+
+  // ARRAYS
+
+const figuras=[];
+const envio= 500;
+
+function Figura(nombre, precio, categoria){
+  this.nombre= nombre;
+  this.precio= parseFloat(precio);
+  this.categoria= categoria;
+
+  this.precioFinal=()=>{
+    this.precio = this.precio * 1.21 + envio;
+  }
+}
+
+const Jinx= new Figura('Jinx', 10000, 'League of legends');
+Jinx.precioFinal();
+
+const Luffy= new Figura('Luffy', 17000, 'One Piece');
+Luffy.precioFinal();
+
+const Nezuko= new Figura('Nezuko', 12000, 'Demon Slayer');
+Nezuko.precioFinal();
+
+const Daenerys= new Figura('Daenerys', 7000, 'Game of thrones');
+Daenerys.precioFinal();
+
+
+function cargarFiguras(figura){
+  figuras.push(figura);
+}
+function eliminarFigura(figura){
+  figuras.pop(figura);
+}
+
+cargarFiguras(Jinx);
+cargarFiguras(Luffy);
+cargarFiguras(Nezuko);
+cargarFiguras(Daenerys);
+
+for (const propiedad of figuras) {
+  console.log(propiedad);
+}
