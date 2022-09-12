@@ -1,4 +1,4 @@
-
+/*
 // Arrays
 const figuras = [];
 
@@ -205,3 +205,29 @@ function finalizarCompra (){
         alert("Su envio ha sido programado para mañana en el horario de 9 am a 2 pm a la direccion de " + envio);
         }
 }
+*/
+
+// clase DOM
+
+alert("Bienvenido a Geekworld, registrese para continuar.");
+
+function registrarse(){
+  let usuario = prompt("Ingrese su usuario.");
+  let password = prompt("Ingrese su contraseña.");
+  alert("Hola " + usuario + " gracias por registrarse.");
+}
+registrarse();
+
+cambiarDescripcion();
+
+function cambiarDescripcion () {
+    Cambiar = prompt("En geekworld estamos renovando, queremos darle un aire fresco a nuestra descripcion de Quienes Somos, que se te ocurre que podria ser una buena descripcion?");
+    
+    const quienesSomos = document.getElementsByClassName("box__quienes__somos__parrafo")
+
+    for (const descripcion of quienesSomos) {
+        descripcion.innerText=Cambiar
+    }
+
+}
+alert('Excelente Es una idea Fantastica, vamos a tenerla en cuenta, quizas la veas en la proxima actualizacion de la pagina :)');
