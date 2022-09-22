@@ -64,7 +64,7 @@
                   <a href="./paginas/ingresa.html">Ingresa</a>
                 </li>
                 <li class="registrateBoton">
-                  <a href="./404.html">Registrate</a>
+                  <a href="./paginas/ingresa.html">Registrate</a>
                 </li>
                 <a class="carrito" href="./404.html"><img src="./imagenes/carrito.png"/></a>
               </ul> 
@@ -74,70 +74,117 @@
 
     <main class="layout">
       <section class="box__quienes">
-        <!-- QUIENES SOMOS -->
-        <h2 class="box__quienes__somos">Quienes somos?</h2>
-        <p class="box__quienes__somos__parrafo">
-          Somos una empresa dedicada a la importación de articulos de colección,
-          principalmente figuras de alta calidad provenientes de peliculas,
-          anime, mangas y series.
-        </p>
+       <section class="shopping-cart">
+  <div class="container">
+      <h1 class="text-center">CARRITO</h1>
+      <hr>
+      <div class="row">
+          <div class="col-4">
+              <div class="shopping-cart-header">
+                  <h6>Producto</h6>
+              </div>
+          </div>
+          <div class="col-2">
+              <div class="shopping-cart-header">
+                  <h6 class="text-truncate">Precio</h6>
+              </div>
+          </div>
+          <div class="col-2">
+        </div>
+          <div class="col-4">
+              <div class="shopping-cart-header">
+                  <h6>Cantidad</h6>
+              </div>
+          </div>
+      </div>
+      <div class="shopping-cart-items shoppingCartItemsContainer">
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+            <div class="shopping-cart-total d-flex align-items-center">
+                <h4 class="mb-0"><strong>Total</strong></h4>
+                <p class="ml-4 mb-0 shoppingCartTotal">0$</p>
+                <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                    data-delay="2000">
+                    <div class="toast-header">
+                        <span>✅</span>
+                        <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="toast-body text-white">
+                        Se aumentó correctamente la cantidad
+                    </div>
+                </div>
+                <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal" id="compraFinalizada"
+                    data-target="#comprarModal">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- END TOTAL -->
+</div>
+</section>
+<!-- END SECTION SHOPPING CART -->
       </section>
       <section class="ingresos__vendidos__ofertas">
     <!-- GRID -->
         <section class="los__mas__vendidos">
-          <h2>Los mas vendidos</h2>
+          <h2 id="1">Los mas vendidos</h2>
         </section>
         <section class="grid__container" data-aos="fade-up"
         data-aos-duration="800">
-          <article>
-            <img src="./imagenes/nezukofigura.jpg" onmouseover="this.src='./imagenes/nezukofigura2.jpg'"onmouseout="this.src='./imagenes/nezukofigura.jpg'"/>
-            <p>$11.590</p>
-            <a class="carrito__a" href="./404.html"><h4 class="agregarCarrito">Agregar al carrito</h4></a>
+          <article class="figura">
+            <img class="figura-imagen" src="./imagenes/nezukofigura.jpg" onmouseover="this.src='./imagenes/nezukofigura2.jpg'"onmouseout="this.src='./imagenes/nezukofigura.jpg'"/>
+            <p class="figura-price">$11590</p>
+            <a class="carrito__a"><h4 class="figura-agregarCarrito">Agregar al carrito</h4></a>
           </article>
 
-          <article>
-            <img src="./imagenes/rengoku.jpg" onmouseover="this.src='./imagenes/rengoku2.jpg'"onmouseout="this.src='./imagenes/rengoku.jpg'"/>
-            <p>$14.890</p>
-            <a class="carrito__a" href="./404.html"><h4 class="agregarCarrito">Agregar al carrito</h4></a>
+          <article class="figura">
+            <img class="figura-imagen" src="./imagenes/rengoku.jpg" onmouseover="this.src='./imagenes/rengoku2.jpg'"onmouseout="this.src='./imagenes/rengoku.jpg'"/>
+            <p class="figura-price">$14890</p>
+            <a class="carrito__a" ><h4 class="figura-agregarCarrito">Agregar al carrito</h4></a>
           </article>
 
-          <article>
-            <img src="./imagenes/tanji.jpg" onmouseover="this.src='./imagenes/tanji2.jpg'"onmouseout="this.src='./imagenes/tanji.jpg'"/>
-            <p>$8900</p>
-            <a class="carrito__a" href="./404.html"><h4 class="agregarCarrito">Agregar al carrito</h4></a>
+          <article class="figura">
+            <img class="figura-imagen" src="./imagenes/tanji.jpg" onmouseover="this.src='./imagenes/tanji2.jpg'"onmouseout="this.src='./imagenes/tanji.jpg'"/>
+            <p class="figura-price">$8900</p>
+            <a class="carrito__a" ><h4 class="figura-agregarCarrito">Agregar al carrito</h4></a>
           </article>
 
-          <article>
-            <img src="./imagenes/jinxfunko.jpg" onmouseover="this.src='./imagenes/jinxfunko2.jpg'"onmouseout="this.src='./imagenes/jinxfunko.jpg'"/>
-            <p>$10.000</p>
-            <a class="carrito__a" href="./404.html"><h4 class="agregarCarrito">Agregar al carrito</h4></a>
+          <article class="figura">
+            <img class="figura-imagen" src="./imagenes/jinxfunko.jpg" onmouseover="this.src='./imagenes/jinxfunko2.jpg'"onmouseout="this.src='./imagenes/jinxfunko.jpg'"/>
+            <p class="figura-price">$10000</p>
+            <a class="carrito__a" ><h4 class="figura-agregarCarrito">Agregar al carrito</h4></a>
           </article>
       </section>
 
       <section class="grid__container" data-aos="fade-up"
       data-aos-duration="800">
-        <article>
-          <img src="./imagenes/zoro.jpg" onmouseover="this.src='./imagenes/zoro2.jpg'"onmouseout="this.src='./imagenes/zoro.jpg'"/>
-          <p>$12.500</p>
-          <a class="carrito__a" href="./404.html"><h4 class="agregarCarrito">Agregar al carrito</h4></a>
+        <article class="figura">
+          <img class="figura-imagen" src="./imagenes/zoro.jpg" onmouseover="this.src='./imagenes/zoro2.jpg'"onmouseout="this.src='./imagenes/zoro.jpg'"/>
+          <p class="figura-price">$12500</p>
+          <a class="carrito__a" ><h4 class="figura-agregarCarrito">Agregar al carrito</h4></a>
         </article>
 
-        <article>
-          <img src="./imagenes/mikasa.jpg" onmouseover="this.src='./imagenes/mikasa2.jpg'"onmouseout="this.src='./imagenes/mikasa.jpg'"/>
-          <p>$8990</p>
-          <a class="carrito__a" href="./404.html"><h4 class="agregarCarrito">Agregar al carrito</h4></a>
+        <article class="figura">
+          <img class="figura-imagen" src="./imagenes/mikasa.jpg" onmouseover="this.src='./imagenes/mikasa2.jpg'"onmouseout="this.src='./imagenes/mikasa.jpg'"/>
+          <p class="figura-price">$8990</p>
+          <a class="carrito__a" ><h4 class="figura-agregarCarrito">Agregar al carrito</h4></a>
         </article>
 
-        <article>
-          <img src="./imagenes/naruto.jpg" onmouseover="this.src='./imagenes/naruto2.jpg'"onmouseout="this.src='./imagenes/naruto.jpg'"/>
-          <p>$5900</p>
-          <a class="carrito__a" href="./404.html"><h4 class="agregarCarrito">Agregar al carrito</h4></a>
+        <article class="figura">
+          <img class="figura-imagen" src="./imagenes/naruto.jpg" onmouseover="this.src='./imagenes/naruto2.jpg'"onmouseout="this.src='./imagenes/naruto.jpg'"/>
+          <p class="figura-price">$5900</p>
+          <a class="carrito__a" ><h4 class="figura-agregarCarrito">Agregar al carrito</h4></a>
         </article>
 
-        <article>
-          <img src="./imagenes/jett.png" onmouseover="this.src='./imagenes/jett2.jpg'"onmouseout="this.src='./imagenes/jett.png'"/>
-          <p>$17.000</p>
-          <a class="carrito__a" href="./404.html"><h4 class="agregarCarrito">Agregar al carrito</h4></a>
+        <article class="figura">
+          <img class="figura-imagen" src="./imagenes/jett.png" onmouseover="this.src='./imagenes/jett2.jpg'"onmouseout="this.src='./imagenes/jett.png'"/>
+          <p class="figura-price">$17000</p>
+          <a class="carrito__a" ><h4 class="figura-agregarCarrito">Agregar al carrito</h4></a>
         </article>
       </div>
     </section>
@@ -145,80 +192,80 @@
 
 <!-- ULTIMOS INGRESOS -->
       <section class="ultimos__ingresos">
-        <h2>Ultimos ingresos</h2>
+        <h2 id="2">Ultimos ingresos</h2>
         <div class="ultimos__ingresos__figuras" data-aos="fade-up"
         data-aos-duration="800">
-          <article>
-            <img src="./imagenes/sasuke.jpg" onmouseover="this.src='./imagenes/sasuke2.jpg'"onmouseout="this.src='./imagenes/sasuke.jpg'"/>
-            <p>$14.990</p>
+          <article class="figura">
+            <img class="figura-imagen" src="./imagenes/sasuke.jpg" onmouseover="this.src='./imagenes/sasuke2.jpg'"onmouseout="this.src='./imagenes/sasuke.jpg'"/>
+            <p class="figura-price">$14990</p>
             <div class="box-carrito">
-              <a class="carrito__a" href="./404.html"><h4 class="agregarCarrito">Agregar al carrito</h4></a>
+              <a class="carrito__a" ><h4 class="figura-agregarCarrito">Agregar al carrito</h4></a>
             </div>
           </article>
 
-          <article>
-            <img src="./imagenes/eleven.jpg" onmouseover="this.src='./imagenes/eleven2.jpg'"onmouseout="this.src='./imagenes/eleven.jpg'"/>
-            <p>$11.000</p>
-            <a class="carrito__a" href="./404.html"><h4 class="agregarCarrito">Agregar al carrito</h4></a>
+          <article class="figura">
+            <img class="figura-imagen" src="./imagenes/eleven.jpg" onmouseover="this.src='./imagenes/eleven2.jpg'"onmouseout="this.src='./imagenes/eleven.jpg'"/>
+            <p class="figura-price">$11000</p>
+            <a class="carrito__a" ><h4 class="figura-agregarCarrito">Agregar al carrito</h4></a>
           </article>
 
-          <article>
-            <img src="./imagenes/ichigo.jpg" onmouseover="this.src='./imagenes/ichigo2.jpg'"onmouseout="this.src='./imagenes/ichigo.jpg'"/>
-            <p>$17.000</p>
-            <a class="carrito__a" href="./404.html"><h4 class="agregarCarrito">Agregar al carrito</h4></a>
+          <article class="figura">
+            <img class="figura-imagen" src="./imagenes/ichigo.jpg" onmouseover="this.src='./imagenes/ichigo2.jpg'"onmouseout="this.src='./imagenes/ichigo.jpg'"/>
+            <p class="figura-price">$17000</p>
+            <a class="carrito__a" ><h4 class="figura-agregarCarrito">Agregar al carrito</h4></a>
           </article>
 
-          <article>
-            <img src="./imagenes/tomioka.jpg" onmouseover="this.src='./imagenes/tomioka2.jpg'"onmouseout="this.src='./imagenes/tomioka.jpg'"/>
-            <p>$15.000</p>
-            <a class="carrito__a" href="./404.html"><h4 class="agregarCarrito">Agregar al carrito</h4></a>
+          <article class="figura">
+            <img class="figura-imagen" src="./imagenes/tomioka.jpg" onmouseover="this.src='./imagenes/tomioka2.jpg'"onmouseout="this.src='./imagenes/tomioka.jpg'"/>
+            <p class="figura-price">$15000</p>
+            <a class="carrito__a" ><h4 class="figura-agregarCarrito">Agregar al carrito</h4></a>
           </article>
         </div>
       </section>
 
       <section class="ofertas__semana">
-        <h2>🔥Ofertas de la semana🔥</h2>
+        <h2 id="3">🔥Ofertas de la semana🔥</h2>
         <h4 class="renuevan">No se aplican cupones sobre las ofertas semanales</h4>
         <div class="ofertas__semana__figuras" data-aos="fade-up"
         data-aos-duration="800">
-          <article>
+          <article class="figura">
             <h3 class="descuento">30% off</h3>
-            <img src="./imagenes/daenerys.jpg" onmouseover="this.src='./imagenes/daenerys2.jpg'"onmouseout="this.src='./imagenes/daenerys.jpg'"/>
+            <img class="figura-imagen" src="./imagenes/daenerys.jpg" onmouseover="this.src='./imagenes/daenerys2.jpg'"onmouseout="this.src='./imagenes/daenerys.jpg'"/>
             <div class="descuento2">
               <h3><del>$15.000</del></h3>
-              <h3>$10500</h3>
+              <h3 class="figura-price">$10500</h3>
             </div>
-            <a class="carrito__a" href="./404.html"><h4 class="agregarCarrito">Agregar al carrito</h4></a>
+            <a class="carrito__a" ><h4 class="figura-agregarCarrito">Agregar al carrito</h4></a>
           </article>
 
-          <article>
+          <article class="figura">
             <h3 class="descuento">15% off</h3>
-            <img src="./imagenes/harrypotter2.jpg" onmouseover="this.src='./imagenes/harrypotter1.jpg'"onmouseout="this.src='./imagenes/harrypotter2.jpg'"/>
+            <img class="figura-imagen" src="./imagenes/harrypotter2.jpg" onmouseover="this.src='./imagenes/harrypotter1.jpg'"onmouseout="this.src='./imagenes/harrypotter2.jpg'"/>
             <div class="descuento2">
               <h3><del>$10.000</del></h3>
-              <h3>$8500</h3>
+              <h3 class="figura-price">$8500</h3>
             </div>
-            <a class="carrito__a" href="./404.html"><h4 class="agregarCarrito">Agregar al carrito</h4></a>
+            <a class="carrito__a" ><h4 class="figura-agregarCarrito">Agregar al carrito</h4></a>
           </article>
 
-          <article>
+          <article class="figura">
             <h3 class="descuento">35% off</h3>
-            <img src="./imagenes/luffy.jpg" onmouseover="this.src='./imagenes/luffy2.jpg'"onmouseout="this.src='./imagenes/luffy.jpg'"/>
+            <img class="figura-imagen" src="./imagenes/luffy.jpg" onmouseover="this.src='./imagenes/luffy2.jpg'"onmouseout="this.src='./imagenes/luffy.jpg'"/>
             <div class="descuento2">
               <h3><del>$17.000</del></h3>
-              <h3>$11050</h3>
+              <h3 class="figura-price">$11050</h3>
             </div>
-            <a class="carrito__a" href="./404.html"><h4 class="agregarCarrito">Agregar al carrito</h4></a>
+            <a class="carrito__a" ><h4 class="figura-agregarCarrito">Agregar al carrito</h4></a>
           </article>
 
-          <article>
+          <article class="figura">
             <h3 class="descuento">20% off</h3>
-            <img src="./imagenes/ragnar.jpg" onmouseover="this.src='./imagenes/ragnar2.jpg'"onmouseout="this.src='./imagenes/ragnar.jpg'"/>
+            <img class="figura-imagen" src="./imagenes/ragnar.jpg" onmouseover="this.src='./imagenes/ragnar2.jpg'"onmouseout="this.src='./imagenes/ragnar.jpg'"/>
             <div class="descuento2">
               <h3><del>$7500</del></h3>
-              <h3>$6000</h3>
+              <h3 class="figura-price">$6000</h3>
             </div>
-            <a class="carrito__a" href="./404.html"><h4 class="agregarCarrito">Agregar al carrito</h4></a>
+            <a class="carrito__a" ><h4 class="figura-agregarCarrito">Agregar al carrito</h4></a>
           </article>
         </div>
         </section>

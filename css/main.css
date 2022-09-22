@@ -63,11 +63,6 @@ header {
   .d-flex-barra {
     transition: 2s;
     width: 450px; }
-  .d-flex button {
-    background-color: white; }
-    .d-flex button:hover {
-      transition: 0.4s;
-      background-color: #f9cbec; }
 
 .ingresaRegistrate {
   display: flex;
@@ -286,7 +281,7 @@ header {
   .los__mas__vendidos h2:hover {
     background-image: linear-gradient(to right, rgba(255, 105, 180, 0.504), pink, rgba(244, 250, 137, 0.742), pink); }
 
-.agregarCarrito {
+.figura-agregarCarrito {
   background-color: #fdf55f;
   width: 250px;
   font-size: 16px;
@@ -294,7 +289,7 @@ header {
   cursor: pointer;
   padding: 12px;
   border-radius: 8px; }
-  .agregarCarrito:hover {
+  .figura-agregarCarrito:hover {
     transition: 0.3s;
     background-color: #897504;
     color: white;
@@ -384,7 +379,7 @@ footer {
   .proximosIngresosGrid:hover {
     background-image: linear-gradient(to right, rgba(255, 105, 180, 0.504), pink, rgba(244, 250, 137, 0.742), pink); }
 
-.agregarCarrito2 {
+.figura-agregarCarrito2 {
   background-color: #fdf55f;
   width: 250px;
   height: 40px;
@@ -393,7 +388,7 @@ footer {
   cursor: pointer;
   padding: 12px;
   border-radius: 8px; }
-  .agregarCarrito2:hover {
+  .figura-agregarCarrito2:hover {
     transition: 0.3s;
     background-color: #897504;
     color: white;
@@ -654,6 +649,64 @@ footer {
   display: flex;
   justify-content: center; }
 
+.item {
+  border: 2px solid #000;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.figura-imagen {
+  height: 300px;
+  width: 100%;
+}
+
+
+
+.item-details .item-button{
+  background-color: rgb(66, 202, 134);
+  color: white;
+}
+
+.item-details > .item-price {
+  margin: 0;
+}
+
+.shopping-cart-items {
+  padding: 20px 0px;
+}
+
+.shopping-cart-header {
+  border-bottom: 1px solid #ccc;
+}
+
+.shopping-cart-image {
+  max-width: 80px;
+  border-radius: 20px;
+}
+
+.shopping-cart-quantity-input {
+  max-width: 45px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #eee;
+  padding: 5px;
+}
+
+.shopping-cart-total {
+  min-height: 96px;
+}
+
+.btn-success {
+  background-color: rgb(66, 202, 134);
+}
+
+
+.btn-success:focus {
+  background-color: rgb(66, 202, 134);
+}
+
+
+
 @media (max-width: 1240px) {
   .ingresa-registrate-carrito {
     display: flex;
@@ -715,7 +768,7 @@ footer {
   .grid__container {
     display: grid;
     grid-template-columns: 280px 280px 280px; }
-  .agregarCarrito2 {
+  .figura-agregarCarrito2 {
     width: 170px; } }
 
 @media (max-width: 880px) {
@@ -762,7 +815,7 @@ footer {
   .card {
     width: 230px;
     height: 300px; }
-  .agregarCarrito2 {
+  .figura-agregarCarrito2 {
     width: 140px;
     height: 27px;
     padding: 5px; }
@@ -911,7 +964,7 @@ footer {
     height: 30px; }
   .d-flex button {
     height: 30px; }
-  .agregarCarrito {
+  .figura-agregarCarrito {
     width: 150px;
     font-size: 11px; }
   .grid__container {
@@ -954,7 +1007,7 @@ footer {
   .card {
     width: 180px;
     height: 260px; }
-  .agregarCarrito2 {
+  .figura-agregarCarrito2 {
     width: 110px;
     padding: 5px;
     font-size: 12px; }
@@ -1013,7 +1066,7 @@ footer {
       width: 100px; }
     .grid__container p {
       font-size: 12px; }
-  .agregarCarrito {
+  .figura-agregarCarrito {
     width: 130px;
     font-size: 11px; } }
 
@@ -1033,7 +1086,7 @@ footer {
       width: 85px; }
     .grid__container p {
       font-size: 10px; }
-  .agregarCarrito {
+  .figura-agregarCarrito {
     width: 100px; }
   .ingresos__vendidos__ofertas h4 {
     padding: 7px; }
@@ -1072,7 +1125,7 @@ footer {
       height: 150px;
       width: 150px;
       margin-top: 20px; }
-  .agregarCarrito {
+  .figura-agregarCarrito {
     margin-bottom: 18px;
     font-size: 11px; }
   .ofertas__semana__figuras article {
