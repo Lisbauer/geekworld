@@ -1,4 +1,5 @@
-/*
+
+
 // Arrays
 const figuras = [];
 
@@ -38,18 +39,14 @@ figuras.push(Jinx, Nezuko, Luffy, Daenerys, HarryPotter, Ragnar, Tanjiro);
 // Inicio
 
 /*
-
 alert("Bienvenido a Geekworld, registrese para continuar.");
-
 function registrarse(){
   let usuario = prompt("Ingrese su usuario.");
   let password = prompt("Ingrese su contraseña.");
   alert("Hola " + usuario + " gracias por registrarse.");
 }
 registrarse();
-
 BuscarFigura();
-
 function BuscarFigura () {
     Filtro = prompt("En GeekWorld tenemos muchas figuras, de que forma te gustaria ver nuestro stock?:\n 1-Por Categoria\n 2-Por Nombre\n 3-Por Precio \n 4- Ver todas las figuras \n 5-Salir");
     if (Filtro === "5") {
@@ -71,9 +68,7 @@ function BuscarFigura () {
         alert("Porfavor, utiliza los numeros al lado de las opciones")
         BuscarFigura();
     }
-
 }
-
 function porCategoria (){
     categoriaFigura = prompt("Seleccionaste por Categoria, en cual estas buscando? \n Anime \n Videojuegos \n Series y Peliculas")
     buscarCategoria = figuras.filter((figura) => figura.categoria == categoriaFigura)
@@ -89,9 +84,7 @@ function porCategoria (){
         
         pedirProducto();
     }
-
 }
-
 function pedirProducto () {
     productoElegido = prompt("Estas son las figuras en stock, cual es de tu interes?:\n 1-Jinx\n 2-Nezuko\n 3-Luffy \n 4-Daenerys \n 5-Harry Potter \n 6-Ragnar \n 7-Tanjiro \n 8-Salir");
     console.log(productoElegido);
@@ -102,9 +95,7 @@ function pedirProducto () {
         productoIngresado()
     }
 }
-
 function porNombre () {
-
     nombreFigura = prompt("Ingresa el nombre de la figura que estas buscando");
     
     buscarNombre = figuras.some((figura) => figura.nombre === nombreFigura)
@@ -114,15 +105,11 @@ function porNombre () {
     } else {
         productoFiltrado = figuras.find (item => item.id == productoElegido);
         alert("La Figura si esta en stock! A continuacion vera todo el catalogo, seleccione su figura para realizar la compra")
-
         pedirProducto();
     }
-
 }
-
 function PorPrecio(){
     precioFigura = prompt("Cuanto puedes gastas?");
-
     filtroPrecio = figuras.filter(figura => {
         return figura.precio > precioFigura
     })
@@ -136,16 +123,13 @@ function PorPrecio(){
     pedirProducto();
     
 }
-
 function productoIngresado () {
     productoFiltrado = figuras.find (item => item.id == productoElegido);
     console.log(productoFiltrado);
-
     alert(`El La Figura seleccionada es ${productoFiltrado.nombre}
     Pertenece a la categoria ${productoFiltrado.categoria} 
     Su precio es de $${productoFiltrado.precio}
     Actualmente tenemos ${productoFiltrado.stock} en stock`);
-
     let comprar = prompt(`Desea comprar la figura de ${productoFiltrado.nombre}? \n 1-Si \n 2-No`)
     if (comprar === "1") {
         alert("El valor de la compra es de $" + productoFiltrado.precio);
@@ -156,13 +140,9 @@ function productoIngresado () {
         alert("Te interesa alguna de las otras figuras?")
         pedirProducto();
       }
-
 }
-
-
 function finalizarCompra (){
     if (carritoFinalizado) {
-
         let formaPago = prompt("Seleccione como desea abonar su compra, usando la palabra correspondiente: \n 1-MERCADOPAGO \n 2-TRANSFERENCIA \n 3-CREDITO");
         while (formaPago !== "1" && formaPago !== "2" && formaPago !== "3") {
           formaPago = prompt("Ingrese una forma de pago válida:\n1-MERCADOPAGO\n2-TRANSFERENCIA\n3-CREDITO");
@@ -196,38 +176,30 @@ function finalizarCompra (){
         alert("Su envio ha sido programado para mañana en el horario de 9 am a 2 pm a la direccion de " + envio);
         }
 }
-
 */
 /*
 // clase DOM
-
 alert("Bienvenido a Geekworld, registrese para continuar.");
-
 function registrarse(){
   const usuario = prompt("Ingrese su usuario.");
   const password = prompt("Ingrese su contraseña.");
   alert("Hola " + usuario + " gracias por registrarse.");
 }
 registrarse();
-
 /*
 cambiarDescripcion();
-
 function cambiarDescripcion () {
     Cambiar = prompt("En geekworld estamos renovando, queremos darle un aire fresco a nuestra descripcion de Quienes Somos, que se te ocurre que podria ser una buena descripcion?");
     
     const quienesSomos = document.getElementsByClassName("box__quienes__somos__parrafo")
-
     for (const descripcion of quienesSomos) {
         descripcion.innerText=Cambiar
     }
-
 }
 alert('Excelente Es una idea Fantastica, vamos a tenerla en cuenta, quizas la veas en la proxima actualizacion de la pagina :)');
-
 */
 
-/*
+
 const carrito = document.getElementsByClassName("figura-agregarCarrito")
 
     for (var i = 0; i < carrito.length; i++){
@@ -353,28 +325,3 @@ function comprarButtonClicked() {
   shoppingCartItemsContainer.innerHTML = '';
   updateShoppingCartTotal();
 }
-*/
-
-
-/*const promptito = prompt('los mas vendidos');
-console.log(promptito);
-
-const losmasvendidos = document.getElementById('1');
-console.log(losmasvendidos.innerText= promptito);
-
-
-
-const figuraprice = document.getElementsByClassName('figura-price');
-console.log(figuraprice);
-
-for (const preciofigura of figuraprice) {
-  console.log(preciofigura.innerHTML);
-}*/
-
-
-const h2 = document.getElementById("2")
-h2.innerText = "Ultimos ingresos";
-
-h2.addEventListener('click', ()=> {
-  console.log("click sobre h2");
-})
