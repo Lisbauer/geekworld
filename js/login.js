@@ -14,7 +14,7 @@
        localStorage.setItem('usuario', usuario)
        localStorage.setItem('password', password)
        localStorage.setItem('email', email)
-       window.location.replace("/login.html")
+       window.location.replace("/geekworld/paginas/perfil.html")
         
     }
     let user = localStorage.getItem("usuario")
