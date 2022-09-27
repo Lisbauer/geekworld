@@ -43,8 +43,8 @@ form.addEventListener("submit", e=>{
         aviso.innerHTML = notificacion
     }else{
         aviso.innerHTML = "Acceso exitoso!"
-        console.log(usuario) 
-        window.location.replace("../paginas/perfil.html");
+        window.location = "/paginas/perfil.html"
     }
 })
+
 

@@ -307,6 +307,7 @@ function updateShoppingCartTotal() {
     total = total + shoppingCartItemPrice * shoppingCartItemQuantity;
   });
   shoppingCartTotal.innerHTML = `${total}$`;
+
 }
 
 function removeShoppingCartItem(event) {
@@ -325,3 +326,5 @@ function comprarButtonClicked() {
   shoppingCartItemsContainer.innerHTML = '';
   updateShoppingCartTotal();
 }
+
+
