@@ -14,7 +14,6 @@
        localStorage.setItem('usuario', usuario)
        localStorage.setItem('password', password)
        localStorage.setItem('email', email)
-       window.location.replace("/geekworld/paginas/perfil.html")
         
     }
     let user = localStorage.getItem("usuario")
@@ -28,16 +27,16 @@ form.addEventListener("submit", e=>{
     let entrar = false
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
    aviso.innerHTML = ""
-    if(nombre.value.length <6){
-        notificacion += `El nombre no es lo suficientemente largo, utiliza al menos 6 caracteres <br>`
+    if(nombre.value.length <4){
+        notificacion += `El nombre no es lo suficientemente largo, utiliza al menos 4 caracteres <br>`
         entrar = true
     }
     if(!regexEmail.test(email.value)){
         notificacion += `El email no es válido <br>`
         entrar = true
     }
-    if(password.value.length < 8){
-        notificacion += `La contraseña no es válida, utiliza al menos 8 caracteres  <br>`
+    if(password.value.length < 6){
+        notificacion += `La contraseña no es válida, utiliza al menos 6 caracteres  <br>`
         entrar = true
     }
     if(entrar){
@@ -45,6 +44,7 @@ form.addEventListener("submit", e=>{
     }else{
         aviso.innerHTML = "Acceso exitoso!"
         console.log(usuario) 
+        window.location.replace("../paginas/perfil.html");
     }
 })
 
