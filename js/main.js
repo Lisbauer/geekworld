@@ -211,6 +211,7 @@ const carrito = document.getElementsByClassName("figura-agregarCarrito")
 const agregarfigura = document.querySelectorAll('.figura-agregarCarrito');
 agregarfigura.forEach((agregar) => {
   agregar.addEventListener('click', agregarOnClick);
+  
 });
 
 const comprarButton = document.querySelector('.comprarButton');
@@ -223,6 +224,14 @@ const shoppingCartItemsContainer = document.querySelector(
 
 
 function agregarOnClick(event) {
+
+  Swal.fire({
+    position: 'top-end',
+    icon: 'success',
+    title: 'Agregado al carrito',
+    showConfirmButton: false,
+    timer: 1500
+  })
   
   const button = event.target
   const figura = button.closest('.figura')
@@ -311,9 +320,27 @@ function updateShoppingCartTotal() {
 }
 
 function removeShoppingCartItem(event) {
-  const buttonClicked = event.target;
-  buttonClicked.closest('.shoppingCartItem').remove();
-  updateShoppingCartTotal();
+  Swal.fire({
+    title: '¿Quieres eliminar esta figura del carrito?',
+    text: "Tendras que agregarla nuevamente en caso de aceptar",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    cancelButtonText: 'No, gracias',
+    confirmButtonText: 'Si, eliminar figura!'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      const buttonClicked = event.target;
+      buttonClicked.closest('.shoppingCartItem').remove();
+      updateShoppingCartTotal();
+      Swal.fire(
+        'Figura Eliminada!',
+        'La figura fue removida del carrito.',
+        'success'
+      )
+    }
+  })
 }
 
 function quantityChanged(event) {

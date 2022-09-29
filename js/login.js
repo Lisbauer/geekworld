@@ -5,7 +5,6 @@
     const aviso = document.getElementById("notificacion")
 
 
-
     function entrar(){
         const usuario = document.getElementById('nombre').value;
         const password = document.getElementById('password').value;
@@ -28,23 +27,49 @@ form.addEventListener("submit", e=>{
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
    aviso.innerHTML = ""
     if(nombre.value.length <4){
-        notificacion += `El nombre no es lo suficientemente largo, utiliza al menos 4 caracteres <br>`
         entrar = true
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'El nombre no es válido, utiliza al menos 6 caracteres',
+          })
+
     }
     if(!regexEmail.test(email.value)){
-        notificacion += `El email no es válido <br>`
         entrar = true
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'El email no es válido',
+          })
     }
     if(password.value.length < 6){
-        notificacion += `La contraseña no es válida, utiliza al menos 6 caracteres  <br>`
         entrar = true
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'La contraseña no es válida, utiliza al menos 6 caracteres',
+          })
     }
     if(entrar){
         aviso.innerHTML = notificacion
     }else{
+        Swal.fire({
+            icon: 'success',
+            timer: 1500,
+            title: 'Acceso Exitoso!',
+            showConfirmButton: false,
+            timer: 1500
+
+          })
+        setTimeout(() => {
+            window.location = "../paginas/perfil.html"
+        }, 1700);
         aviso.innerHTML = "Acceso exitoso!"
-        window.location = "../paginas/perfil.html"
+        
     }
 })
+
+
 
 
