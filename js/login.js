@@ -4,7 +4,6 @@
     const form = document.getElementById("formulario")
     const aviso = document.getElementById("notificacion")
 
-
     function entrar(){
         const usuario = document.getElementById('nombre').value;
         const password = document.getElementById('password').value;
@@ -66,10 +65,22 @@ form.addEventListener("submit", e=>{
             window.location = "../paginas/perfil.html"
         }, 1700);
         aviso.innerHTML = "Acceso exitoso!"
-        
+        entrar();
     }
 })
 
 
+const lista = document.getElementById("paises")
 
+fetch("https://restcountries.com/v3.1/alpha?codes=col,pe,ar,ur,cl,par,bol")
+.then(res => res.json())
+.then(data=>{
+    data.forEach(post =>{
+        const option = document.createElement('option');
+        option.innerHTML += `
+        <option value="${post.name.common}">${post.name.common}</option>
+        `;
+        lista.append(option)
+    })
 
+})

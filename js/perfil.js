@@ -54,3 +54,4 @@ const desectructurar = ({nombre, correo}) => {
 }
 
 desectructurar(usuario)
+
