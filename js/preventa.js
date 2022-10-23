@@ -29,12 +29,16 @@ figuras = [
       nombre: 'Blastoise',
       img: '../imagenes/pokemonpreventa.jpg', 
     },
-    {
-      nombre: 'Nezuko KNY',
-      img: '../imagenes/nezukopreventa.jpg', 
-    },
 ]
 
+function nuevaFigura(nombre, img){
+  this.nombre = nombre;
+  this.img = img;
+}
+
+let addFig = new nuevaFigura('Nezuko KNY', '../imagenes/nezukopreventa.jpg')
+
+figuras.push(addFig)
 
 const agregarfiguras = document.getElementsByClassName('proximosIngresos5')[0];
 figuras.forEach((figura) => {
@@ -57,5 +61,3 @@ figuras.forEach((figura) => {
     itemF.innerHTML = addFiguras
     agregarfiguras.append(itemF);
     });
-  
-  
