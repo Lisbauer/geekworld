@@ -5,6 +5,14 @@ let openPanelButton = document.getElementById("open-panel");
 let closePanelButton = document.getElementById("close-panel");
 let cartPanel = document.querySelector(".cart-panel");
 
+
+function quantityChanged(event) {
+  const input = event.target;
+  input.value <= 0 ? (input.value = 1) : null;
+  updateShoppingCartTotal();
+}
+
+
 openPanelButton.onclick = () => {
     cartPanel.classList.add("open");
     openPanelButton.classList.add("hide")
@@ -38,7 +46,7 @@ const products = document.querySelector(
 
 
 function agregarOnClick(event) {
-
+  
   Swal.fire({
     position: 'top-end',
     icon: 'success',
@@ -79,7 +87,7 @@ function addItemToShoppingCart(itemPrice, itemImage) {
     
     const shoppingCartRow = document.createElement('div');
     const shoppingCartContent = `
-<div class="product">
+<div class="product" id="product">
     <img width="80" src=${itemImage} alt="iphone">
   <div>
       <span>
@@ -128,7 +136,7 @@ function updateShoppingCartTotal() {
     total = total + shoppingCartItemPrice * shoppingCartItemQuantity;
 
   });
-  shoppingCartTotal.innerHTML = `${total}$`;
+  shoppingCartTotal.innerHTML = `$${total}`;
 
 }
 
@@ -157,18 +165,25 @@ function removeShoppingCartItem(event) {
   })
 }
 
-
-function quantityChanged(event) {
-  const input = event.target;
-  input.value <= 0 ? (input.value = 1) : null;
-  updateShoppingCartTotal();
-}
-
 function comprarButtonClicked() {
-  shoppingCartItemsContainer.innerHTML = '';
-  updateShoppingCartTotal();
+
+ let emptyCart = document.getElementById('product')
+ let emptytotal = document.getElementById('cartshopping')
+ document.getElementById('products').innerHTML === "" 
+ ?
+ Swal.fire('Tu carrito esta vacio, selecciona un producto') :
+ Swal.fire({
+  position: 'top-end',
+  icon: 'success',
+  title: 'Gracias por su compra',
+  showConfirmButton: false,
+  timer: 1500
+})
   cartPanel.classList.remove("open");
   openPanelButton.classList.remove("hide");
+  emptyCart.remove();
+  emptytotal.innerText = "$0"
+
 }
 
 
