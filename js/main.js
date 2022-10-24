@@ -170,7 +170,7 @@ function comprarButtonClicked() {
  let emptyCart = document.getElementById('product')
  let emptytotal = document.getElementById('cartshopping')
 
- document.getElementById('products').innerHTML === "" || "<div></div>"
+ document.getElementById('products').innerText === "" 
  ?
  Swal.fire('Tu carrito esta vacio, selecciona un producto') :
  Swal.fire({
